@@ -1,0 +1,66 @@
+<header class="xs-header header-transparent white-header">
+	<div class="container">
+		<div class="xs-logo-wraper container-logo xs-padding-0">
+			<a class="nav-brand" href="{{path('twc_onde_homepage')}}">
+				<img src="{{asset('front/images/logo_onde.png')}}" alt="" class="logo white-logo">
+			</a>
+		</div><!-- .xs-logo-wraper END -->
+		<nav class="xs-menus xs_nav-landscape">
+			<div class="nav-header">
+				<div class="nav-toggle white-nav-toggle"></div>
+				<!-- <a href="index.html" class="nav-logo">
+					<img src="assets/images/logo_onde.png" alt="">
+				</a> -->
+			</div><!-- .nav-header END -->
+			<div class="nav-menus-wrapper row">
+				<div class="col-lg-12">
+					<ul class="nav-menu">
+						<li>
+							<a href="#" class="selected-it">
+								<div class="">Article</div><span class="submenu-indicator"><span class="submenu-indicator-chevron white-indicator"></span></span>
+							</a>
+							<ul class="nav-dropdown nav-submenu" style="right: auto;">
+								<li><a href="{{path('presentation')}}">
+										<div>Ajouter une actualitée</div>
+									</a>
+								</li>
+								<li><a href="{{path('onde_list_article')}}">
+										<div>liste des actualitées</div>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="list-header selected-pr">
+								<div class="">Presse</div><span class="submenu-indicator"><span
+										class="submenu-indicator-chevron"></span></span>
+							</a>
+							<ul class="nav-dropdown nav-submenu" style="right: auto;">
+								<li><a href="{{path('onde_add_media')}}">
+										<div>Ajouter documentation</div>
+									</a>
+								</li>
+								<li><a href="{{path('onde_list_media')}}">
+										<div>Liste de documentation</div>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="{{path('onde_list_picture')}}" class="list-header">
+								<div class="selected-act">Medias</div>
+							</a>
+						</li>
+						<li class="">
+							<a href="{{path('admin_logout')}}" class="list-header">
+								<div class="selected-act">se déconnecter</div>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="nav-overlay-panel"></div>
+		</nav>
+	</div>
+</header>

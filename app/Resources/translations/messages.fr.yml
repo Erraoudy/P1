@@ -1,0 +1,245 @@
+header:
+    accueil: Accueil
+    aProposONDE: 
+        title: "A propos de l'ONDE"
+        ONDEenBref: L'ONDE en bref
+        historique: Historique
+        mission: Mission
+        realisations: Réalisations
+        PLAIDOYER: "PLAIDOYER"
+        organigramme: Organigramme
+    projets: 
+        title: Projets
+        protection: Protection
+        participation: Participation
+        sante: Santé
+        veille_suivi: Veille et suivi
+        campagneVillesAfricaines: "Campagne « Villes africaines sans enfants en situation de rue »"
+    actualites: Actualités
+    publications: 
+        title: Publications
+        etudes_Rapports: Etudes et Rapports
+        photos_Videotheques: Photos et Vidéothèques
+    espacePresse: Espace presse
+    portailEnfant: Portail Enfant
+    appeldOffre: Appel d'offre
+    contact: Contact
+homepage: 
+    parlementEnfant: Parlement de l'enfant
+    congres: Congrès National des droits de l'enfant
+    shareButtons: 
+        numeroVert2511: Numéro Vert 2511
+        enfantsSituationRue: Enfants en situation de rue
+        parlementdeEnfant: Parlement de l'Enfant
+        kidsZone: Kids Zone
+    extraitDiscoursLalaMaryam:
+        body: "Ce qui importe ce n'est pas le monde que nous laisserons à nos enfants, mais les enfants que nous laisserons à ce monde."
+        signature: "Extrait du discours de Son Altesse Royale La Princesse Lalla Meryem"
+    videosBasPage:
+        enfantsTousEgaux: Enfants, Tous égaux
+        ONDEenBref: L’ONDE en bref
+        ceremonieOfficielleCNDE: Cérémonie officielle de la 16ème édition du CNDE
+        la16èmeEditionCNDE: "16ème Edition du CNDE : La journée Institutionnelle en bref"
+        enfantsEtoilesBrillantes: Enfants, Etoiles Brillantes du Maroc
+        lacherBallonsCIDE:  Lâcher de ballons
+        lesEnfantsParlementairesAction: Les Enfants Parlementaires en action
+        jeNeSuisPasInvisible: Je ne suis pas Invisible
+        regardezMoi: Regardez-moi
+historique:
+    title: Historique
+    l1990:
+        title: "1990 : Le Maroc parmi les premiers à signer la CIDE "
+        text: "Le 20 novembre 1989, la Convention internationale des droits de l’enfant voit le jour. C’est le premier texte qui reconnaît les droits de l’enfant. La CIDE fait  de l'enfant un sujet de droits qui touchent à l’ensemble des domaines :  civil, politique, économique, social et culturel. En février 1990, le Maroc signe la Convention, confirmant ainsi l'engagement du Royaume à protéger l'enfant. "
+    l1993:
+        title: "1993 : Les droits de l’Enfant consacrés à l’échelle nationale"
+        text: "Le gouvernement marocain a ratifié la Convention des Nations Unies relative aux droits de L'Enfant en juin 1993. En ratifiant ce traité international, le Royaume s’est ainsi engagé à garantir l’intérêt supérieur de l’enfant et à le protéger de toutes les formes d’exploitation. "
+    l1994:
+        title: "1994 : Tenue de la 1ère édition du Congrès national des droits de l’Enfant"
+        text: "Le Maroc s’est engagé dans la concrétisation de la Convention des Nations Unies un an après sa ratification. La première initiative menée dans ce sens fut la tenue du premier Congrès national des droits de l’Enfant sous la présidence de SAR la Princesse Lalla Meryem, en mai 1994 à Casablanca. Ce premier congrès a réuni toutes parties impliquées dans les divers domaines de l’enfance, aussi bien de la société civile que des départements ministériels afin de les sensibiliser aux nouveaux engagements du Royaume. <br>« … Notre décision de faire de votre congrès un observatoire national auquel sera assignée la tâche de poursuivre la stratégie relative à la mise en œuvre de la convention onusienne, ainsi que notre nomination à sa présidence de notre chère fille aînée, la princesse Lalla Meryem, proviennent de notre foi inébranlable dans le soutien que nous voulons apporter à l’action associative que nous espérons voir devenir une tradition louable permanente dans notre pays… ». Extrait du message royal adressé à la deuxième session du Congrès National des droitss de l’Enfant (1995)."
+    l1995:
+        title: "1995 : Le Congrès prend la forme d’un Observatoire"
+        text: "Le Congrès national, mis en place comme mécanisme de suivi de la Convention des Nations Unies, a été érigé en Observatoire national des droits de l’Enfant. Cette transformation, voulue par Feu Sa Majesté le Roi Hassan II, a été annoncé lors de la deuxième édition du Congrès, tenue à Kénitra en mai 1996. Feu Sa Majesté Hassan II a également confié la présidence de cette nouvelle institution permanente à Son Altesse Royale la Princesse Lalla Meryem. La création de l’Observatoire est alors vue comme une étape importante dans le processus de consolidation des actions menées en faveur de l’enfance, confirmant ainsi la volonté du Royaume de créer les conditions de nature à permettre aux enfants de jouir de l’ensemble de leurs droits."
+    l1999_1:
+        title: "1999 : Création du Centre d’écoute"
+        text: "L’année 1999 marque un nouvel élan dans l’action de l’ONDE. C’est au cours de cette année que Son Altesse Royale la Princesse Lalla Meryem a inauguré le Centre National d’Ecoute et de Protection des Enfants victimes de violence, d’Exploitation et d’Inclusion, avec tous ses mécanismes en particulier le Numéro vert « 2511 »."
+    l1999_2:
+        title: "1999 :  Mise en place du Parlement de l’Enfant"
+        text: "Au printemps 1999, et après un long processus préparatoire, s'est tenue la première session d'un rouage essentiel du dispositif de mise en œuvre par notre pays de la Convention des Nations Unies des Droits de L'Enfant : le ' Parlement de l'enfant '. La mise sur pied de cette instance, que L'Observatoire conçoit comme un forum de dialogue et de concertation entre les enfants, vient concrétiser l'une des recommandations majeures du Congrès National des Droits de l'Enfant, et rejoint plusieurs objectifs. Il s’agit d’offrir l'occasion à des enfants de différentes classes d'âge, et provenant de l'ensemble des régions du Royaume de disposer d'un cadre permanent et structuré d'échanges et de débat."
+presentation:
+    title: Présentation de l'ONDE
+    text1: Page d'accueil
+    text2: En bref
+    text3: Les droits des enfants sont inaliénables et indivisibles. C’est dans cet état d’esprit que l’Observatoire national des droits de l’enfant (ONDE) a été créé par Feu Sa Majesté le Roi Hassan II en mai 1995, soit deux ans après la ratification par le Maroc de la Convention des Nations Unies relative aux droits de l’Enfant. L’Observatoire, dont la présidente est assurée par Son Altesse Royale la Princesse Lalla Meryem, s’est vu confié la mission d’effectuer le suivi de la mise en œuvre de la Convention des Nations pour les droits de l’Enfant et ce afin de promouvoir les droits de l’enfant dans tous les domaines relatifs à la santé, à l’éducation, à la législation, aux loisirs et à la culture, dans ses dimensions matérielles, morales et spirituelles, comme cela est prévu à l’article 3 du statut de l’ONDE. L'ONDE, dont l'ambition est d'accélérer la mise en œuvre de la CDE, veille également à orienter la politique publique  en contribuant notamment aux différents débats  sur toutes les questions touchant l’enfant et joue un rôle crucial en matière d’harmonisation de la législation nationale. 
+    realisation:
+        first:
+            title: Journées nationales de vaccination
+            description: Chaque année, Son Altesse Royale La Princesse Lalla Meryem, donne le coup d’envoi de cette opération visant à renforcer les défenses immunitaires des enfants. Depuis, d’importantes avancées en termes de vaccination, ont été enregistrés. Le taux de vaccination est estimé à 95%, selon les statistiques du ministère de la Santé.
+        carnetSante: 
+            title: Carnet de santé 
+            description: Ce carnet, fruit d’une collaboration entre plusieurs intervenants, constitue un support d’information qui consigne l’histoire médicale de l’enfant depuis sa naissance. Il renseigne sur les différents états morbides vécus par l’enfant et permet d’assurer le suivi de son état de santé aussi bien sur le plan somatique que sur le plan psychomoteur.
+        second:
+            title: « Un douar, un puits »
+            description1: L’opération « Un douar, un puits » a été lancée en mai 1995, par Son Altesse Royale La Princesse Lalla Meryem, L’objectif était de promouvoir la scolarisation de la petite fille en milieu rural en dotant chaque localité rurale d’un point d’eau équipé et aménagé pour libérer ainsi les jeunes filles et les femmes de la corvée de l’eau. L’opération en chiffres
+            description2: Approvisionnement en eau potable de 150 douar;
+            description3: 750.000 habitant ont bénéficié de cette opération dont 330.000 enfants.
+        third:
+            title: Opération de soutien aux enfants du Kosovo
+            description1: En 1999, sous le Haut Patronage de Feu Sa Majesté Hassan II, que Dieu l’Ait dans Sa Miséricorde, l’ONDE, sous la Présidence de Son Altesse Royale La Princesse Lalla Meryem, a assuré la coordination d’une action de solidarité pour la paix au Kosovo. Le dispositif opérationnel d’urgence a profité à toute la population.Principaux chiffres
+            description2: Distribution de vêtements, de chaussures, de couvertures et de jouets au profit de 15 000 familles ;
+            description3: Distribution de 25 000 cartables avec fournitures scolaires ;
+            description4: Organisation d’un séjour pour suivi médical à Agadir au profit de 10 enfants albanais en situation de handicap, victimes de guerre.
+        terrainsOmnisports: 
+            title: Opération terrain Omnisports
+            description: Le droit de l’enfant aux loisirs et au jeu est partout unanimement reconnu. En 1997, l’ONDE a initié en partenariat avec la commune de Youssoufia de Rabat, une action démonstrative qui consistait en l’aménagement d’un espace  omnisport au profit des enfants du Quartier Nahda II. Ce projet s’est très vite imposé comme un carrefour central de la vie du quartier, et comme point de rencontre pour les enfants, mais également pour les adultes qui les accompagnent.
+missions:
+    title: Nos Missions et Objectifs
+    small: L'action de l'UNICEF En quatre programmes
+    redirect:
+        home: Page d'accueil /
+        missions: Mission
+    center-title: Mission
+    description1: La mission et les actions de l’ONDE sont guidées par les objectifs et les principes énoncés par son statut, lequel reprend les lignes directrices de la Convention des Nations Unis relative aux droits de l’Enfant.
+    description2: L’Observatoire national des droits de l’enfant est chargé du suivi de la mise en œuvre de la Convention des Nations Unies pour les droits de l’Enfant, en vue de promouvoir la protection de l’enfant de manière permanente, dans tous les domaines relatifs à la santé, à l’éducation, à la législation, aux loisirs et à la culture, dans ses dimensions matérielles, morales et spirituelles. », article 3 du statut de l’ONDE.
+    title-card: L’Observatoire est chargé de quatre missions
+    section1:
+        title: Des défis et des
+        text: enjeux
+        cards:
+            card1:
+                text1: Assurer une veille
+                text2: permanente 
+                description: Dès sa création en 1995, l’ONDE a été doté d’une mission prioritaire:le suivi de manière continu de la situation de l’enfant au Maroc et l’évaluation des actions entreprises dans tous les domaines afférents au bien-être de cette catégorie de la population. 
+            card2:
+                text1: Informer et sensibiliser 
+                text2: le public
+                description: Un enfant qui jouit pleinement de ses droits est un enfant qui vit dans une société sensibilisée et consciente des enjeux du respect de l’enfance. C’est dans cette optique que l’ONDE mène des actions destinées à informer, sensibiliser et conseiller les différentes instances concernées par la protection et la promotion des droits de l’enfant. 
+            card3:
+                text1: Actions démonstratives en faveur
+                text2: de l’enfant
+                description: Pour garantir une pleine efficacité, l’ONDE entreprend des actions démonstratives promotionnelles des droits de l’enfant dans les domaines de la santé, de l’éducation, de la justice, de la culture, etc. 
+            card4:
+                text1: Fédérer et orienter la politique
+                text2:  publique 
+                description: L’ONDE joue le rôle de fédérateur. Il est, en effet, chargé de coordonner les initiatives intersectionnelles engagées par les partenaires nationaux et internationaux en faveur de l’enfance. 
+realisation:
+    title: Nos Missions et Objectifs
+    text1: Page d'accueil
+    text2: Réalisations
+    center-title: RÉALISATIONS
+    description: L’ONDE compte à son actif plusieurs réalisations dans le domaine de la protection de l'enfance.
+    section1:
+        title: Améliorer la santé de l’enfant
+        desc1: Journées nationales de vaccination
+        desc2: Carnet de santé de l’enfant
+        desc3: Equipement de 50 cellules de prise en charge des enfants victimes de violence au niveau des hôpitaux du Royaume
+    section2:
+        title: Promouvoir l’éducation de l’enfant
+        desc1: Appui à la campagne de généralisation de la scolarité de la petite fille rurale et viabilisation des écoles
+        desc2: Opération « cartables, scolarisation de la petite fille »
+        desc3: Programme National « Equité dans l’Accès au Savoir » vise à renforcer et à accompagner les élèves, filles et garçons, dans leur parcours scolaire.
+    section3:
+        title: Protéger l’enfant contre les abus
+        desc1: Création du Centre d’écoute avec un numéro vert 2511, le premier de son genre en Afrique
+        desc2: Campagne de sensibilisation sur « les petites bonnes »
+        desc3: Campagne de sensibilisation sur l’enfant et la drogue
+        desc4: Campagne de sensibilisation sur l’abus sexuel.
+    section4:
+        title: Contribuer au bien-être de l’enfant
+        desc1: Kosovo
+        desc2: Opérations terrains Omnisports
+        desc3: Projet un Douar un puits.
+    section5:
+        title: Production de l’évidence
+        desc1: Etudes sur la situation des enfants au niveau des communes
+        desc3: Etude « Situation des enfants et des femmes au Maroc- Analyse selon l’approche équité » (SitAn 2014)
+        desc4: Etude sur la « Sûreté et sécurité des enfants ».
+    section6:
+        title: Participation (PE)
+        desc1: Parlement de l’enfant
+        desc2: Club des Jeunes Anciens du Parlement de l’Enfant
+        desc3: MUN
+etudes_Rapports: 
+    bilanMaroc: 30 ans après l'adoption de la CIDE, quel bilan pour le Maroc
+    contributionONDE: Contribution de l’ONDE, soumise au Comité des Nations Unies des droits de l’enfant, dans le cadre de l’examen des troisième et quatrième rapports périodiques du Maroc et du rapport sur le Protocole facultatif à la Convention
+    observationsONDE: Observations de l’ONDE sur le projet de loi 12.19 concernant les conditions de travail et d’emploi des travailleurs domestiques
+    observationsRecommandation: Observations et recommandations de l’ONDE concernant le projet de loi n ° 14-78 relatif au Conseil consultatif de la famille et l'enfance.
+photo_video:
+    title: Photos et Vidéothèques
+    title1: Congrès National des Droits de l’Enfant
+    title2: Parlement de l’Enfant 
+    title3: Evènements divers
+plaidoyer:
+    title: PLAIDOYER
+    text1: Page d'accueil
+    text2: Plaidoyer
+    center-title: PLAIDOYER
+    description: L’ONDE ne peut veiller à l’application effective de la Convention des Nations Unies relative aux droits de l’enfant que s’il participe à tout le processus de prise de décision publique. Pour cela, l’ONDE œuvre pour le renforcement des politiques publiques dédiées à l’enfance ainsi qu’à l’harmonisation de la législation nationale, en contribuant notamment aux différents débats publics sur toutes les questions touchant l’enfant. Cela à travers plusieurs actions telles que
+    desc1: La contribution à l’élaboration du Plan d’Action National pour l’Enfance 2006-2015 
+    desc2: La préparation du Rapport national présenté dans le cadre de l’examen périodique universel.
+    desc3: Contribution de l’ONDE, soumise au Comité des Nations Unies des droits de l’enfant, dans le cadre de l’examen des troisième et quatrième rapports périodiques du Maroc et du rapport sur le Protocole facultatif à la Convention des droits de l’enfant sur l’implication des enfants dans les conflits armés.
+    desc4: Observations de l’ONDE sur le projet de loi 12.19 concernant les conditions de travail et d’emploi des travailleurs domestiques.
+    desc5: Observations et recommandations de l’ONDE concernant le projet de loi n ° 14-78 relatif au Conseil consultatif de la famille et l'enfance.
+    desc6: Observations et recommandations de l’ONDE concernant le projet de loi Projet de loi n°89-15 relatif au Conseil consultatif de la jeunesse et de l’action associative. 
+    desc7: Observations et recommandations de l’ONDE concernant le projet de loi portant révision du Code pénal.
+    desc8: Participation à la production de la Sitan 2014.
+contact:
+    tel: 05 37 75 50 99
+    address: 46, rue Mellouza, Nahda II RABAT Maroc
+    text1: Contactez nous
+    text2: Pour en savoir plus sur les dons, rendez-vous sur notre site 
+    green: Contactez-nous
+    text3: . En appelant le
+    nom: Nom
+    prenom: Prénom
+    profession: Profession
+    mail: Adresse mail
+    holdernom: Nom
+    message: Message
+    holderMessage: Message
+    envoyer: Envoyer
+protection:
+    title: Protection
+    description1: Une protection intégrée des enfants est vitale pour leur bien-être, surtout qu’ils sont les plus exposés aux risques de violence, de maltraitance et d’exploitation. Conscient de cet impératif, l’ONDE a mis en place, en novembre 1999, un Centre d’écoute pour permettre aux enfants victimes et à toute autre personne de dénoncer un cas de violence ou d’exploitation. Le centre propose des services intégrés, allant de la réception des doléances jusqu’à l’appui médical et juridique, et ce à travers ses différents outils de travail. Parmi ceux-ci, le numéro vert « <a href='tel:212800002511' class='num-vert'>0800002511</a> », lancé par Son Altesse Royale la Princesse Lalla Meryem le 25 novembre 1999. Outre le numéro vert <a href='tel:212800002511' class='num-vert'>0800002511</a>, le Centre d’écoute a étoffé ses outils de travail par un numéro abrégé « <a href='https://2511.ma/' target='_blank'>2511</a> » afin de faciliter sa mémorisation auprès du grand public.
+    description2: Opérationnels 24 heures sur 24, et 7 jours sur 7, ces deux dispositifs permettent à toute personne, majeure ou mineure soit-elle, de signaler les actes de maltraitance et d’exploitation, en plus d’informer l’appelant sur les voies à entreprendre en matière de prise en charge. Ensuite, le centre intervient auprès des instances administratives et judiciaires concernées pour une prise en charge juridique directe des enfants victimes. En effet, le centre met à la disposition des victimes un avocat à titre gratuit. Sur le plan médical et psychosocial, les victimes peuvent également bénéficier d’une prise en charge au sein des cellules d’accueil installées au niveau des hôpitaux du Royaume.
+participation:
+    title: Participation
+    description1: Chaque citoyen a le droit de participer au processus de prise de décision. La Convention des Nations Unies des droits de l’enfant, ratifiée par le Maroc en juin 1993, consacre ce droit à la participation des enfants, y compris ceux en situation de handicap. C’est dans cette optique que l’ONDE a créé, le 25 mai 1999, le Parlement de l’Enfant, qui se veut aujourd’hui une véritable école pour l’initiation à la vie démocratique et citoyenne. Chaque enfant y exprime son point de vue sur des questions qui le concernent, développant ainsi ses compétences en matière de dialogue et d’argumentation. Ils peuvent notamment émettre leur avis des stratégies gouvernementales ou des projets de loi traitant de la question de l’enfance. Les sessions régionales et nationales constituent le point de rencontre marquant leur participation à la vie citoyenne. Les précédentes éditions ont été marquées par la lecture d’une lettre royale, laquelle représente une véritable feuille de route pour ces jeunes parlementaires.
+    description2: "Nous avons érigé l'Observatoire National des Droits de l'Enfant en espace de rencontre où associations, secteurs gouvernementaux et experts se concertent sur le suivi de l`application de la Convention des Nations Unis dans ce domaine et Nous avons fait du Parlement de l'Enfant une institution permanente, que Nous voulons une école d’initiation à la démocratie et dont Nous avons confié la Présidence à Notre sœur Son Altesse Royale La Princesse Lalla Meryem. <span style='font-size:14px;'>Extrait du message de Sa Majesté le Roi Mohammed VI, janvier 2001.</span>"
+sante:
+    title: Santé
+    description: L’accès aux soins de santé est un droit inaliénable. Partant de ce principe, consacré par la Convention internationale, l’ONDE œuvre à protéger les enfants dès leur naissance à travers plusieurs actions dont l’organisation de campagnes nationales de vaccination. Chaque année, Son Altesse Royale La Princesse Lalla Meryem, donne le coup d’envoi de cette opération visant à renforcer les défenses immunitaires des enfants. Depuis, d’importantes avancées en termes de vaccination, ont été enregistrés. Le taux de vaccination est estimé à 95%, selon les statistiques du ministère de la Santé. 
+observatoire:
+    title: Veille et suivi
+    description: L’éparpillement caractérisant les données et les informations relatives à la situation des enfants au Maroc peut constituer un frein à l’établissement de politiques publiques à même de promouvoir les droits de cette catégorie de la population. Pour y remédier, l’ONDE s’apprête à mettre en place un pôle Observatoire, dont la principale mission est d’assurer ce rôle de centralisation des informations. Il s’agira de créer un système d’information regroupant l’ensemble des données et indicateurs relatifs à la situation de l’enfance dans les domaines économique, social, culturel et politique. 
+                            Il est à noter que l’ONDE dispose déjà d’un tableau de bord détaillé découlant des études réalisées auparavant, notamment celle sur la situation des enfants dans les communes.  L’Observatoire s’est également doté de plusieurs publications qui recensent les indicateurs sur la situation des enfants dans différents domaines, à savoir l’éducation, la santé et le travail. Ces publications traitent également de la problématique des enfants en situation difficile et mettent à la disposition des intéressés un recueil de textes législatifs marocains concernant l’enfant.
+                            Outre ces études et publications, l’ONDE investit également dans des actions de sensibilisation afin d’éveiller et de renforcer la prise de conscience quant à l’importance de contribuer à la protection des droits de l’enfant. 
+cnde:
+    title: Congrès National des droits de l'enfant
+    description: Le premier Congrès National des Droits de L'Enfant a été organisé à Casablanca en mai 1994, à l'initiative de Son Altesse Royale la Princesse Lalla Meryem. Cette première édition du Congrès, placée sous le Haut Patronage de Feu Sa Majesté le Roi Hassan II, a rassemblé l'ensemble des forces vives actives dans les divers domaines de l'enfance, tant de la société civile que des départements ministériels concernés. Depuis, le Congrès national tient chaque année sa session ordinaire. Les intervenants impliqués dans la mise en œuvre de la Convention des Nations Unies sur les droits de l’enfant sont invités à évaluer les initiatives lancées en faveur de l’enfant dans les différents domaines et identifier de nouvelles perspectives d’actions. Il convient de souligner que 16 éditions ont été organisées à ce jour.  Différentes thématiques ont été abordées lors de ces rencontres, comme notamment la protection des enfants victimes de violence ainsi que la généralisation de la scolarisation et la lutte contre l’analphabétisme en milieu rural. Ces grands-messes se sont soldées sur une panoplie de recommandations à même de guider les pouvoirs publics dans leur démarche d’élaboration des stratégies et plans d’action préparés par le gouvernement.
+campagne:
+    title: Campagne « Villes africaines sans enfants en situation de rue »
+    description: Aucune ville ni aucun pays n’échappe aujourd’hui au phénomène des enfants en situation de rue. L’enjeu de protéger ces enfants n’est plus à démontrer, surtout qu’ils sont souvent victimes d’abus de toutes sortes. L’ONDE s’est engagée dans cette voix en lançant la campagne panafricaine « Pour des villes africaines sans enfants en situation de rue », lors du 8e sommet Africités, qui s’est déroulé à Marrakech en novembre 2018, sous le Haut Patronage de Sa Majesté le Roi Mohammed VI et la Présidence effective de Son Altesse Royale la Princesse Lalla Meryem. Cette initiative, lancée en partenariat avec l’organisation Cités et Gouvernements Locaux Unis de l’Afrique (CGLU) vise à intégrer la question de l’enfance dans la politique urbaine, les programmes et plans de développement des villes et des territoires locaux. L’objectif étant d’éradiquer ce phénomène dans les villes et territoires locaux et régionaux des pays africains. A terme, il s’agira de réduire d’au moins 20% le nombre en situation de rue à l’horizon 2030.Pour y parvenir, tous les responsables gouvernementaux et élus africains ont été appelés à mettre en place des mécanismes et un plan d’actions destinés à garantir la protection et la réintégration des enfants en situation de rue. Au niveau national, l’Observatoire National des Droits de l’Enfant (ONDE) du Royaume du Maroc, veut montrer veut montrer la voie à emprunter en faisant de la capitale du Royaume, Rabat, une ville pilote, un modèle pour le Maroc et le continent africain. Ainsi, les autres villes du Royaume et d’Afrique pourront concevoir, à partir de l’expertise déployée au niveau de Rabat, la stratégie la plus adaptée à leurs spécificités locales.
+    link: Pour plus d’informations, cliquer ici
+organnigramme:
+    title: organigramme
+espaceEnfant: 
+    jeuxLudiques: Jeux ludiques
+    jeuxDivertissement: Jeux de divertissement
+    bandesDessinées: Bandes dessinées
+footer:
+    apropos:
+        title: A PROPOS DE L'ONDE
+        first: L'ONDE en bref
+        second: Mission
+        third: Réalisations
+        forth: Plaidoyer
+        fifth: Historique
+        sixth: Organigramme
+    contact:
+        title: Contactez nous
+    copyright:
+        first: Copyright
+        second: ONDE
+        third: Tous les droits sont réservés
+
+

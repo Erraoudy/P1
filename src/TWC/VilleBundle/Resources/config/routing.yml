@@ -1,0 +1,59 @@
+twc_ville_homepage:
+    path:     /
+    defaults: { _controller: TWCVilleBundle:Default:index }
+
+discours:
+    path:     /discours
+    defaults: { _controller: TWCVilleBundle:Presentation:discours }
+
+phenomene:
+    path:     /phenomene
+    defaults: { _controller: TWCVilleBundle:Presentation:phenomene }
+
+role:
+    path:     /role
+    defaults: { _controller: TWCVilleBundle:Presentation:role }
+
+missions:
+    path:     /missions
+    defaults: { _controller: TWCVilleBundle:Missions:missions }
+
+objectifs:
+    path:     /objectifs
+    defaults: { _controller: TWCVilleBundle:Missions:objectifs }
+
+index:
+    path:     /index
+    defaults: { _controller: TWCVilleBundle:Campagne:index }
+
+unicef:
+    path:     /unicef
+    defaults: { _controller: TWCVilleBundle:Partenaires:unicef }
+
+gouvernement:
+    path:     /gouvernement
+    defaults: { _controller: TWCVilleBundle:Partenaires:gouvernement }
+
+cglu:
+    path:     /cglu
+    defaults: { _controller: TWCVilleBundle:Partenaires:cglu }
+
+adherentes:
+    path:     /adherentes
+    defaults: { _controller: TWCVilleBundle:Partenaires:adherentes }
+
+index:
+    path:     /index
+    defaults: { _controller: TWCVilleBundle:Mediatheque:index }
+
+index:
+    path:     /index
+    defaults: { _controller: TWCVilleBundle:Documentation:index }
+
+formulaire:
+    path:     /formulaire
+    defaults: { _controller: TWCVilleBundle:Contact:formulaire }
+
+telfax:
+    path:     /telfax
+    defaults: { _controller: TWCVilleBundle:Contact:telfax }

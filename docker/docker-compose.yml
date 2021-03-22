@@ -1,0 +1,154 @@
+version: "3.4"
+
+services:
+
+### Workspace Utilities Container ###########################
+
+    workspace_onde:
+      networks:
+        - mysql
+        - elasticsearch
+      build:
+        context: ../
+        args:
+          - COMPOSER_GLOBAL_INSTALL=false
+          - INSTALL_WORKSPACE_SSH=false
+          - PUID=1000
+          - PGID=1000
+          - TZ=Europe/Zurich
+        dockerfile: "docker/workspace/Dockerfile-71"
+      environment:
+        TZ: Europe/Zurich
+      volumes:
+        - type: bind
+          source: ../
+          target: /var/www
+      tty: true
+
+### App Container #########################################
+
+    app_onde:
+      build:
+        context: ../
+        dockerfile: "docker/app/Dockerfile-local"
+      networks:
+        - mysql
+        - elasticsearch
+      ports:
+        - "80:80"
+        - "443:443"
+      environment:
+        - TZ=Europe/Zurich
+        - ASSETS_VERSION=0.1
+      volumes:
+        - type: bind
+          source: ../
+          target: /var/www
+        - type: bind
+          source: ../logs/nginx/
+          target: /var/log/nginx
+      depends_on:
+        - elasticsearch
+        - mysql_onde
+
+### MySQL Container #########################################
+
+    mysql_onde:
+      build:
+        context: ./mysql
+      entrypoint: ['/entrypoint.sh', '--character-set-server=utf8', '--collation-server=utf8_general_ci']
+      user: mysql
+      environment:
+        - MYSQL_DATABASE=onde
+        - MYSQL_USER=onde
+        - MYSQL_PASSWORD=onde456
+        - MYSQL_ROOT_PASSWORD=onde@456
+        - TZ=Europe/Zurich
+      networks:
+        - mysql
+      ports:
+        - "3307:3306"
+      volumes:
+        - type: bind
+          source: ../data/mysql
+          target: /var/lib/mysql
+
+### PhpMyAdmin Container #########################################
+
+    phpmyadmin:
+      build: ./phpmyadmin
+      environment:
+        - TZ=Europe/Zurich
+        - PMA_ARBITRARY=1
+        - MYSQL_USER=onde
+        - MYSQL_PASSWORD=onde456
+        - MYSQL_ROOT_PASSWORD=onde@456
+      networks:
+        - mysql
+      ports:
+        - "8888:80"
+      depends_on:
+        - "mysql_onde"
+
+### ElasticSearch Container #########################################
+
+    elasticsearch:
+      image: docker.elastic.co/elasticsearch/elasticsearch:5.4.1
+      networks:
+        - elasticsearch
+      ports:
+        - "9200:9200"
+        - "9300:9300"
+      environment:
+        - TZ=Europe/Zurich
+        - cluster.name=symfony-cluster
+        - "ES_JAVA_OPTS=-Xms256m -Xmx256m"
+      volumes:
+        - elasticsearch-data:/usr/share/elasticsearch/data
+        - elasticsearch-plugins:/usr/share/elasticsearch/plugins
+      ulimits:
+        memlock:
+          soft: -1
+          hard: -1
+
+### Kibana Container #######################################
+
+    kibana:
+      image: docker.elastic.co/kibana/kibana:5.4.1
+      networks:
+        - elasticsearch
+      ports:
+        - "5601:5601"
+      environment:
+        - TZ=Europe/Zurich
+      depends_on:
+        - elasticsearch
+
+### Redis Container #########################################
+
+    # redis:
+    #   image: redis:latest
+    #   user: redis
+    #   networks:
+    #     - redis
+    #   ports:
+    #     - "6379:6379"
+    #   environment:
+    #     - TZ=Europe/Zurich
+    #   volumes:
+    #     - type: bind
+    #       source: ../data/redis
+    #       target: /data
+
+### Networks Setup #########################################
+
+networks:
+  # redis:
+  elasticsearch:
+  mysql:
+
+### Volumes Setup #########################################
+
+volumes:
+  elasticsearch-data:
+  elasticsearch-plugins:

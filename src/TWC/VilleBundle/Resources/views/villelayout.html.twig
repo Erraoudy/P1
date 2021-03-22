@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="author" content="SemiColonWeb" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{% block Style %}
+			<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/bootstrap.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/style.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/dark.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/fonts.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/font-icons.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/animate.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/magnific-popup.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/responsive.css')}}" type="text/css" />
+		{% endblock %}
+		<title>{% block Title %}{% endblock %}| ONDE</title>
+	</head>
+	
+	<body class="stretched">
+		{% for msg in app.session.flashbag.get('notice') %}
+		    <div class="alert alert-{{ msg.type }}">
+		        <strong>{{ msg.title }}</strong><br/>{{ msg.message }}
+		    </div>
+		{% endfor %}
+		<div id="wrapper" class="clearfix">
+			{% block body %}
+			{% endblock %}
+		</div>
+		<script type="text/javascript" src="{{asset('front/js/jquery.js')}}"></script>
+		<script type="text/javascript" src="{{asset('front/js/plugins.js')}}"></script>
+		<script type="text/javascript" src="{{asset('front/js/functions.js')}}"></script>
+		{% block custom_js %}
+        {% endblock %}
+	</body>
+</html>

@@ -1,0 +1,4 @@
+services:
+#    twc_onde.example:
+#        class: TWC\OndeBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

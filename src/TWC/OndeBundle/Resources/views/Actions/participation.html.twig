@@ -1,0 +1,133 @@
+{% extends 'TWCOndeBundle::ondelayout.html.twig' %}
+{% block Title %}Homepage {{parent()}}{% endblock %}
+{% block Style %}
+	{{parent()}}
+	<style>
+		.xs-banner-inner-section{
+			padding-bottom: 0px;
+		}
+		.breadcrumb{
+			margin-top:15px;position: absolute;right: 15px;
+		}
+		@media only screen and (max-width: 992px){
+			.breadcrumb{
+				margin-top:15px;position: initial;
+			}
+		}
+		
+		.video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 30px;
+			height: 0;
+			overflow: hidden;
+		}
+
+		.video-container iframe,  
+		.video-container object,  
+		.video-container embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+
+{% endblock %}
+{% block body %}
+	{% if app.request.locale != "ar" %}
+		{% include "TWCOndeBundle:Default:header.html.twig" %} 
+	{% endif %}
+	{% if app.request.locale == "ar" %}
+		{% include "TWCOndeBundle:Default:headerAr.html.twig" %} 
+	{% endif %}
+	<section class="xs-banner-inner-section parallax-window" style="background-image:url('{{asset('front/images/backgrounds/parralax_3.jpg')}}');">
+		<div class="xs-black-overlay"></div>
+		<div class="container">
+			{# <div class="color-white xs-inner-banner-content pb-3">
+				<h2>{{"participation.title"|trans}}</h2>
+			</div> #}
+		</div>
+	</section>
+
+<main class="xs-main">
+	<div class="xs-content-section-padding xs-blog-single">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12 offset-lg-3 order-md-2 order-lg-first">
+					<div class=" xs-inner-banner-content pb-3">
+						<h2 class="color-title-b">{{"participation.title"|trans}}</h2>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-12 text-lg-right order-md-first order-lg-2">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="{{path('twc_onde_homepage')}}">{{"header.accueil"|trans}}</a></li>
+						<li class="breadcrumb-item active" aria-current="page">{{"header.projets.participation"|trans}}</li>
+					</ol>
+				</div>
+			</div>
+			{# <div class="xs-inner-banner-content pb-3">
+				<h2 class="color-title-b">{{"participation.title"|trans}}</h2>
+			</div> #}
+			{# {% if app.request.locale == "fr" %}
+				<div class="section section-home-bo">
+					<div class="container bottom-con">
+						<div class="row">
+							<div class="col-md-8 col-sm-8">
+								<blockquote class="blockq-img block-mission mb-5">
+									{{"participation.description2"|trans|raw}} 
+								</blockquote>
+								<blockquote class="blockq-img block-mission second-quote">
+										
+								</blockquote>
+							</div>
+							<div class="col-md-4 col-sm-4 res-first">
+								<div class="row">
+									<div class="col-md-12 col-sm-12">
+										<div style="background-image: url({{asset('assets/images/Med-VI.jpg')}});    height: 400px;background-size: cover;background-repeat: no-repeat;background-position: inherit;margin-top: 15px;margin-bottom: 15px;">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endif %} #}
+			<div class="row">
+				<div class="col-md-12 col-lg-6">
+					<div class="xs-text-content xs-pr-20">
+						<p class="p-description-first">
+							{{"participation.description1"|trans}} 
+						</p>
+					</div><!-- .xs-text-content END -->
+				</div>
+				<div class="col-lg-6">
+					{# <iframe src="https://player.vimeo.com/video/377751403" width="500" height="340" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> #}
+					<div class="video-container">
+						<iframe width="560" height="315" src="{{ app.request.locale != "en" ? 'https://www.youtube.com/embed/yBYHW-xa9oo': 'https://www.youtube.com/embed/3qTLTuq7vJo'}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					{# <div class="xs-feature-image-box image-1">
+						<img src="{{asset('assets/images/img4.jpg')}}" alt="">
+
+					</div>
+					<div class="xs-feature-image-box image-2" style="margin-top: 0px !important;">
+						<img src="{{asset('assets/images/img10.jpg')}}" alt="">
+					</div> #}
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{{ render(controller("TWCOndeBundle:Default:footer")) }}
+{% endblock %}
+{% block custom_js %}
+	<script type="text/javascript">
+		$( document ).ready(function() {
+		    $(".blue-header").css('display','none');
+		    $(".selected-pr").addClass("active");
+		    $(".header-transparent .nav-menu li .selected-pr .submenu-indicator-chevron").css("border-color","transparent #5cb37c #5cb37c transparent");
+		});
+	</script>
+{% endblock %}

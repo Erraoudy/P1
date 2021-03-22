@@ -1,0 +1,87 @@
+twc_parlement_homepage:
+    path:     /
+    defaults: { _controller: TWCParlementBundle:Default:index }
+
+parlement_presentation:
+    path:     /presentation
+    defaults: { _controller: TWCParlementBundle:Parlement:presentation }
+
+parlement_role:
+    path:     /role
+    defaults: { _controller: TWCParlementBundle:Parlement:role }
+
+parlement_composition:
+    path:     /composition
+    defaults: { _controller: TWCParlementBundle:Parlement:composition }
+
+parlement_commissions:
+    path:     /commissions
+    defaults: { _controller: TWCParlementBundle:Parlement:commissions }
+
+parlement_regional_presentation:
+    path:     /presentationR
+    defaults: { _controller: TWCParlementBundle:Sessions:presentationR }
+
+parlement_regional_activites:
+    path:     /activitesR
+    defaults: { _controller: TWCParlementBundle:Sessions:activitesR }
+
+parlement_regional_session:
+    path:     /sessionR
+    defaults: { _controller: TWCParlementBundle:Sessions:sessionR }
+
+parlement_national_presentation:
+    path:     /presentationN
+    defaults: { _controller: TWCParlementBundle:Sessions:presentationN }
+
+parlement_national_activites:
+    path:     /activitesN
+    defaults: { _controller: TWCParlementBundle:Sessions:activitesN }
+
+parlement_national_session:
+    path:     /sessionN
+    defaults: { _controller: TWCParlementBundle:Sessions:sessionN }
+
+parlement_agenda_presentation:
+    path:     /presentation
+    defaults: { _controller: TWCParlementBundle:Agenda:presentation }
+
+parlement_agenda_priorites:
+    path:     /priorites
+    defaults: { _controller: TWCParlementBundle:Agenda:priorites }
+
+parlement_agenda_ep:
+    path:     /agenda
+    defaults: { _controller: TWCParlementBundle:Agenda:agenda }
+
+parlement_activites_presentation:
+    path:     /presentationA
+    defaults: { _controller: TWCParlementBundle:Activites:presentation }
+
+parlement_activites_membres:
+    path:     /membres
+    defaults: { _controller: TWCParlementBundle:Activites:membres }
+
+parlement_activites_carte:
+    path:     /carte
+    defaults: { _controller: TWCParlementBundle:Activites:carte }
+
+parlement_cape_presentation:
+    path:     /presentationC
+    defaults: { _controller: TWCParlementBundle:Cape:presentation }
+
+parlement_cape_reseau:
+    path:     /reseau
+    defaults: { _controller: TWCParlementBundle:Cape:reseau }
+
+parlement_mediatheque_index:
+    path:     /indexM
+    defaults: { _controller: TWCParlementBundle:Mediatheque:index }
+
+parlement_documentation_index:
+    path:     /indexDoc
+    defaults: { _controller: TWCParlementBundle:Documentation:index }
+
+parlement_contact_telfax:
+    path:     /telfax
+    defaults: { _controller: TWCParlementBundle:Contact:telfax }

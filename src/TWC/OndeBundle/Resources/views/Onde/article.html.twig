@@ -1,0 +1,239 @@
+{% extends 'TWCOndeBundle::ondelayout.html.twig' %}
+{% block Style %}
+	{{parent()}}
+	<link href="{{ asset('assets/css/dropzone.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.0.0/cropper.min.css">
+	<style>
+	    header{
+	    	background-color: #fff !important;
+	    }
+	    .header-transparent .nav-menu li a .submenu-indicator-chevron{
+	    	border-color: transparent #041d57 #041d57 transparent;
+	    }
+	</style>
+	{# <link rel="stylesheet" href="{{asset('front/css/lightslider.css')}}"> #}
+	
+{% endblock %}
+{% block Title %}Homepage {{parent()}}{% endblock %}
+{% block body %}
+
+	{% include "TWCOndeBundle:Default:header.html.twig" %} 
+
+<div class="section first-section-home" style="min-height: 600px;">
+	<form action="{{path('add-article')}}" method="POST" id="formArticle">
+		<div class="col-md-12">
+			<input type="date" name="dateCreation" value="{{ article.creationDate|date("d-m-Y") != null ? article.creationDate|date("d-m-Y") }}">
+			<input type="date" name="updateDate" value="{{ article.updateDate|date("d-m-Y") != null ? article.updateDate|date("d-m-Y") }}">
+			<input type="text" name="titre" value="{{ article.titre != null ? article.titre}}">
+			<input type="text" name="auteur" value="{{ article.auteur != null ? article.auteur}}">
+		</div>
+		<div class="col-md-12">
+			<input type="text" name="publication" value="{{ article.publication != null ? article.publication}}">
+			<textarea name="contenu">{{ article.contenu != null ? article.contenu}}</textarea>
+			<select name="category[]" >
+				{% if article.category == null %}
+            		<option selected disabled>Please select</option>
+	                {% for category in categories %}
+	                  	<option value="{{category.name}}">{{category.name}}</option>
+	                {% endfor %}
+	            {% else %}
+	            	{% set cat = article.category.name %}
+	            	<option value="{{article.category.name}}">{{article.category.name}}</option>
+	                {% for category in categories %}
+	                  	{% if cat != category.name %}
+	                  		<option value="{{category.name}}">{{category.name}}</option>
+	                  	{% endif %}
+	                {% endfor %}
+            	{% endif %}
+			</select>
+			<div class="col-md-12">
+				{% for item in article.image %}
+				<img style="height: 200px;width: 230px;" class="post_thumb" src="{{ article.image|length > 0 ? asset(article.image|first.Objectkey) : asset('assets/images/noimage.png') }}">
+				<button type="" class="btn deleteImage"> delete image</button>
+				{% endfor %}
+			</div>
+			<div id="avatar" class="dropzone">
+                <input name="fileprofil" type="file">
+                <div class="dz-default dz-message">
+                    <span>add Image article</span>
+                </div>
+            </div>
+			
+		</div>
+		<button type="submit" id="submit">submit form</button>
+	</form>
+
+</div>
+
+	{{ render(controller("TWCOndeBundle:Default:footer")) }}
+{% endblock %}
+{% block custom_js %}
+	<script type="text/javascript" src="{{ asset('assets/js/dropzone.js') }}"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.0.0/cropper.min.js"></script>
+    <script>
+     	// Dropzone.autoDiscover = false;
+      //   var myDropZone = new Dropzone("#avatar", { //id 
+      //       url: "{{ path('add-article') }}",
+      //       paramName: "file",
+      //       parallelUploads: 1,
+      //       uploadMultiple: false,
+      //       maxFilesize: 5, // MB
+      //       maxFiles: 1,
+      //       acceptedFiles: ".png,.jpg,.gif,.jpeg,.bmp",
+      //       clickable: "#avatar", //id div drop
+      //       autoProcessQueue: false,
+      //       addRemoveLinks: true,
+      //   });
+      //   myDropZone.on('success', function() {
+      //     window.location.reload();
+      //   });
+
+    </script>
+    <script>
+        Dropzone.autoDiscover = false;
+
+        var myDropZone = new Dropzone("#avatar", { //id form
+
+            url: "{{path('article_add_image',{'id':article.id})}}",
+            paramName: "file",
+            parallelUploads: 1,
+            uploadMultiple: true,
+            maxFiles: 1,
+            acceptedFiles: ".png,.jpg,.gif,.jpeg,.bmp",
+            clickable: "#avatar", //id div drop
+            autoProcessQueue: false,
+            addRemoveLinks: true,
+
+        });
+        
+        myDropZone.on("addedfile", function(file) {
+            $('.dz-message').remove();
+            $('.dz-details').css("display","none");
+            $('.dz-success-mark').css("display","none");
+            $('.dz-error-mark').css("display","none");
+            if (this.files.length > 1) {
+                this.removeFile(this.files[0]);
+            }
+            if (this.files.length > 0) {
+               $('.dzresize120').parent().remove();
+            }
+
+            // $(dz-file-preview.previewElement).remove();
+            // $('.dz-file-preview').prepend($(file.previewElement));
+            // $('.dz-file-preview').first().remove();
+        });
+
+
+        myDropZone.on("removedfile", function(file, response) {
+            $("#picture").val(""); 
+        });
+        myDropZone.on("success", function(file, response) {
+            $("#picture").val("success"); 
+            $("#photo").removeClass("divrederror");
+            $("#picture-error").addClass("nodisplay");
+            $("#picture-error2").addClass("nodisplay");
+        });
+        myDropZone.on("error", function(file, response) {
+            
+        });
+
+        myDropZone.on("sendingmultiple", function(file, xhr, formData) {
+
+        });
+
+        myDropZone.on("processingmultiple", function(file, xhr, formData) {
+
+        });
+
+        // transform cropper dataURI output to a Blob which Dropzone accepts
+        function dataURItoBlob(dataURI) {
+            var byteString = atob(dataURI.split(',')[1]);
+            var ab = new ArrayBuffer(byteString.length);
+            var ia = new Uint8Array(ab);
+            for (var i = 0; i < byteString.length; i++) {
+                ia[i] = byteString.charCodeAt(i);
+            }
+            return new Blob([ab], { type: 'image/jpeg' });
+        }
+        // modal window template
+        var modalTemplate = '<div class="modal fade" tabindex="-1" role="dialog">'+
+                                '<div class="modal-dialog" role="document">'+
+                                    '<div class="modal-content">'+
+                                        '<div class="modal-body">'+
+                                            '<div class="image-container"></div>'+
+                                        '</div>'+
+                                        '<div class="modal-footer">'+
+                                            '<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>'+
+                                            '<button type="button" class="btn btn-primary crop-upload">Upload</button>'+
+                                        '</div>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>';
+
+
+        // listen to thumbnail event
+        myDropZone.on('thumbnail', function (file) {
+
+            // ignore files which were already cropped and re-rendered
+            // to prevent infinite loop
+            if (file.cropped) {
+                return;
+            }
+            // cache filename to re-assign it to cropped file
+            var cachedFilename = file.name;
+            // remove not cropped file from dropzone (we will replace it later)
+            myDropZone.removeFile(file);
+
+            // dynamically create modals to allow multiple files processing
+            var $cropperModal = $(modalTemplate);
+            // 'Crop and Upload' button in a modal
+            var $uploadCrop = $cropperModal.find('.crop-upload');
+
+            var $img = $('<img />');
+            // initialize FileReader which reads uploaded file
+            var reader = new FileReader();
+            reader.onloadend = function () {
+                // add uploaded and read image to modal
+                $cropperModal.find('.image-container').html($img);
+                $img.attr('src', reader.result);
+
+                // initialize cropper for uploaded image
+                $img.cropper({
+                    aspectRatio: 1,
+                    autoCropArea: 1,
+                    movable: false,
+                    rotatable: true,
+                    cropBoxResizable: true,
+                    minContainerWidth: 560,
+                    minContainerHeight: 300
+                });
+            };
+           
+            // read uploaded file (triggers code above)
+            reader.readAsDataURL(file);
+
+            $cropperModal.modal('show');
+
+            // listener for 'Crop and Upload' button in modal
+            $uploadCrop.on('click', function() {
+                // get cropped image data
+                var blob = $img.cropper('getCroppedCanvas').toDataURL();
+                // transform it to Blob object
+                var newFile = dataURItoBlob(blob);
+                // set 'cropped to true' (so that we don't get to that listener again)
+                newFile.cropped = true;
+                // assign original filename
+                newFile.name = cachedFilename;
+
+                // add cropped file to dropzone
+                myDropZone.addFile(newFile);
+                // upload cropped file with dropzone
+                myDropZone.processQueue();
+                $cropperModal.modal('hide');
+            });
+        });
+        $(document).ready(function(e){
+        });
+    </script>
+
+{% endblock %}

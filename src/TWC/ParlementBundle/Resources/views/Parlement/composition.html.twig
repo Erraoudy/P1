@@ -1,0 +1,249 @@
+{% extends 'TWCParlementBundle::parlementlayout.html.twig' %}
+{% block Title %}Homepage {{parent()}}{% endblock %}
+{% block Style %}
+	{{parent()}}
+{% endblock %}
+{% block body %}
+	{{ render(controller("TWCParlementBundle:Default:topMenu")) }}
+	<div class="tho-option">
+		<div id="preloader" class="smooth-loader-wrapper" style="display: none;">
+	    	<div class="smooth-loader">
+	      		<div class="loader">
+	        		<span class="dot dot-1"></span>
+			        <span class="dot dot-2"></span>
+			        <span class="dot dot-3"></span>
+			        <span class="dot dot-4"></span>
+	      		</div>
+	    	</div>
+	  	</div>
+	  	<section class="py-10">
+			<div class="container">
+				<div class="row">
+					<div class="section-title mb-4">
+			            <h2 class="text-danger pl-0">Composition</h2>
+			            <hr>
+			        </div>
+			    </div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 mb-7 mb-md-8 mb-lg-9">
+        <div class="media media-avator-view flex-column flex-sm-row">
+          <a class="media-img mb-5 mb-sm-0 mr-md-5 mr-lg-6 rounded-sm shadow-sm" href="teachers-details.html">
+            <img class="rounded-sm" src="{{asset('front/img/amanda.jpg')}}" alt="avator-img1.jpg">
+          </a>
+          <div class="media-body">
+            <a class="font-size-20 font-weight-medium d-inline-block mb-1" href="teachers-details.html">Amanda Stone</a>
+
+            <span class="text-muted font-size-15 mb-1 d-block">Président du parlement</span>
+            <p>They must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you.</p>
+
+            <div class="">
+              <a class="icon-rounded-circle-small bg-warning mr-2" href="javascript:void(0)">
+                <i class="fa fa-facebook text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-success mr-2" href="javascript:void(0)">
+                <i class="fa fa-twitter text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-danger mr-2" href="javascript:void(0)">
+                <i class="fa fa-google-plus text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-info mr-2" href="javascript:void(0)">
+                <i class="fa fa-pinterest-p text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-purple" href="javascript:void(0)">
+                <i class="fa fa-vimeo text-white" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-xs-12 mb-7 mb-md-8 mb-lg-9">
+        <div class="media media-avator-view flex-column flex-sm-row">
+          <a class="media-img mb-5 mb-sm-0 mr-md-5 mr-lg-6 rounded shadow-sm" href="teachers-details.html">
+            <img class="rounded" src="{{asset('front/img/jawad.png')}}" alt="avator-img2.jpg">
+          </a>
+          <div class="media-body">
+            <a class="font-size-20 font-weight-medium d-inline-block mb-1" href="teachers-details.html">Jawad Ziyati</a>
+
+            <span class="text-muted font-size-15 mb-1 d-block">Vice Président du parlement</span>
+            <p>They must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you.</p>
+
+            <div class="">
+              <a class="icon-rounded-circle-small bg-warning mr-2" href="javascript:void(0)">
+                <i class="fa fa-facebook text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-success mr-2" href="javascript:void(0)">
+                <i class="fa fa-twitter text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-danger mr-2" href="javascript:void(0)">
+                <i class="fa fa-google-plus text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-info mr-2" href="javascript:void(0)">
+                <i class="fa fa-pinterest-p text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-purple" href="javascript:void(0)">
+                <i class="fa fa-vimeo text-white" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-xs-12 mb-7 mb-md-0">
+        <div class="media media-avator-view flex-column flex-sm-row">
+          <a class="media-img mb-5 mb-sm-0 mr-md-5 mr-lg-6 rounded shadow-sm" href="teachers-details.html">
+            <img class="rounded" src="{{asset('front/img/sakura.jpg')}}" alt="avator-img-3.jpg">
+          </a>
+          <div class="media-body">
+            <a class="font-size-20 font-weight-medium d-inline-block b-1" href="teachers-details.html">Sakura Hinamura</a>
+
+            <span class="text-muted font-size-15 mb-1 d-block">Chef de departement A</span>
+            <p>They must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you.</p>
+
+            <div class="">
+              <a class="icon-rounded-circle-small bg-warning mr-2" href="javascript:void(0)">
+                <i class="fa fa-facebook text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-success mr-2" href="javascript:void(0)">
+                <i class="fa fa-twitter text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-danger mr-2" href="javascript:void(0)">
+                <i class="fa fa-google-plus text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-info mr-2" href="javascript:void(0)">
+                <i class="fa fa-pinterest-p text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-purple" href="javascript:void(0)">
+                <i class="fa fa-vimeo text-white" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-xs-12">
+        <div class="media media-avator-view flex-column flex-sm-row">
+          <a class="media-img mb-5 mb-sm-0 mr-md-5 mr-lg-6 rounded shadow-sm" href="teachers-details.html">
+            <img class="rounded" src="{{asset('front/img/ibrahima.jpg')}}" alt="team-1.jpg">
+          </a>
+          <div class="media-body">
+            <a class="font-size-20 font-weight-medium d-inline-block mb-1" href="teachers-details.html">Ibrahima Touré</a>
+
+            <span class="text-muted font-size-15 mb-1 d-block">Chef de departement A</span>
+            <p>They must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you.</p>
+
+            <div class="">
+              <a class="icon-rounded-circle-small bg-warning mr-2" href="javascript:void(0)">
+                <i class="fa fa-facebook text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-success mr-2" href="javascript:void(0)">
+                <i class="fa fa-twitter text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-danger mr-2" href="javascript:void(0)">
+                <i class="fa fa-google-plus text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-info mr-2" href="javascript:void(0)">
+                <i class="fa fa-pinterest-p text-white" aria-hidden="true"></i>
+              </a>
+              <a class="icon-rounded-circle-small bg-purple" href="javascript:void(0)">
+                <i class="fa fa-vimeo text-white" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+				</div>
+			</div>
+		</section>
+    <section class="pt-10 my-md-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-warning card-hover mb-9">
+          <div class="card-body text-center px-md-5 px-lg-6 my-2">
+            <div class="card-icon-border-large border-warning mtn-80">
+              <i class="fa fa-quote-left text-warning" aria-hidden="true"></i>
+            </div>
+            <blockquote class="blockquote blockquote-sm mt-2">
+              <p class="font-normal mb-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+              <footer class="blockquote-footer text-uppercase text-white"> James Smith <cite class="d-block text-capitalize font-size-14 opacity-80 mt-1" title="Source Title">Mary’s Father</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-success card-hover mb-9">
+          <div class="card-body text-center px-md-5 px-lg-6 my-2">
+            <div class="card-icon-border-large border-success mtn-80">
+              <i class="fa fa-quote-left text-success" aria-hidden="true"></i>
+            </div>
+            <blockquote class="blockquote blockquote-sm mt-2">
+              <p class="font-normal mb-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+              <footer class="blockquote-footer text-uppercase text-white"> David Smith <cite class="d-block text-capitalize font-size-14 opacity-80 mt-1" title="Source Title">Susan’s Father</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-danger card-hover mb-9">
+          <div class="card-body text-center px-md-5 px-lg-6 my-2">
+            <div class="card-icon-border-large border-danger mtn-80">
+              <i class="fa fa-quote-left text-danger" aria-hidden="true"></i>
+            </div>
+            <blockquote class="blockquote blockquote-sm mt-2">
+              <p class="font-normal mb-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+              <footer class="blockquote-footer text-uppercase text-white">William Smith <cite class="d-block text-capitalize font-size-14 opacity-80 mt-1" title="Source Title">Karen’s Father</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-info card-hover mb-9">
+          <div class="card-body text-center px-md-5 px-lg-6 my-2">
+            <div class="card-icon-border-large border-info mtn-80">
+              <i class="fa fa-quote-left text-info" aria-hidden="true"></i>
+            </div>
+            <blockquote class="blockquote blockquote-sm mt-2">
+              <p class="font-normal mb-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+              <footer class="blockquote-footer text-uppercase text-white">Daniel Smith <cite class="d-block text-capitalize font-size-14 opacity-80 mt-1" title="Source Title">Lisa’s Father</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-purple card-hover mb-9">
+          <div class="card-body text-center px-md-5 px-lg-6 my-2">
+            <div class="card-icon-border-large border-purple mtn-80">
+              <i class="fa fa-quote-left text-purple" aria-hidden="true"></i>
+            </div>
+            <blockquote class="blockquote blockquote-sm mt-2">
+              <p class="font-normal mb-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+              <footer class="blockquote-footer text-uppercase text-white"> Mike Jones <cite class="d-block text-capitalize font-size-14 opacity-80 mt-1" title="Source Title">Linda’s Father</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-pink card-hover mb-9">
+          <div class="card-body text-center px-md-5 px-lg-6 my-2">
+            <div class="card-icon-border-large border-pink mtn-80">
+              <i class="fa fa-quote-left text-pink" aria-hidden="true"></i>
+            </div>
+            <blockquote class="blockquote blockquote-sm mt-2">
+              <p class="font-normal mb-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+              <footer class="blockquote-footer text-uppercase text-white">Nicholas <cite class="d-block text-capitalize font-size-14 opacity-80 mt-1" title="Source Title">Donna’s Father</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+	</div>
+{% endblock %}

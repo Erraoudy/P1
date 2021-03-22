@@ -1,0 +1,39 @@
+twc_congres_homepage:
+    path:     /
+    defaults: { _controller: TWCCongresBundle:Default:index }
+
+message:
+    path:     /message
+    defaults: { _controller: TWCCongresBundle:Presentation:message }
+
+royale:
+    path:     /royale
+    defaults: { _controller: TWCCongresBundle:Presentation:royale }
+
+congres:
+    path:     /congres
+    defaults: { _controller: TWCCongresBundle:Presentation:congres }
+
+missions:
+    path:     /missions
+    defaults: { _controller: TWCCongresBundle:Missions:missions }
+
+realisations:
+    path:     /realisations
+    defaults: { _controller: TWCCongresBundle:Missions:realisations }
+
+liste:
+    path:     /liste
+    defaults: { _controller: TWCCongresBundle:Editions:liste }
+
+index:
+    path:     /index
+    defaults: { _controller: TWCCongresBundle:Mediatheque:index }
+
+index:
+    path:     /index
+    defaults: { _controller: TWCCongresBundle:Documentation:index }
+
+telfax:
+    path:     /telfax
+    defaults: { _controller: TWCCongresBundle:Contact:telfax }

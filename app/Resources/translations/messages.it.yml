@@ -1,0 +1,302 @@
+landingpage:
+    header:
+        home: HOME
+        discover: SCOPRIRE
+        pricing: PREZZI
+        faq: FAQ
+        signin: LOGIN
+        createcampaign: 'CREA UNA CAMPAGNA'
+        dashboard: DASHBOARD
+        disconnect: SCOLLEGARSI
+        home2: home2
+    home:
+        title: 'Usa il mondo come spazio pubblicitario'
+        description: 'Inserisci le tue campagne di marketing quando e dove vuoi'
+    discover:
+        title: 'Scopri Snapmyle'
+        description: 'Snapmyle è un''app di realtà aumentata che ti dà la possibilità di inserire i tuoi voucher direttamente nel negozio o in luoghi popolari. I clienti possono acquisire questi voucher con l''aiuto della fotocamera del cellulare e riscattarli immediatamente. Snapmyle fornisce uno strumento incredibilmente potente per un marketing efficace senza essere legato a una posizione specifica.'
+    operation:
+        create: Creare
+        descriptioncreate: 'La registrazione su Snapmyle è gratuita. Crea il tuo account con pochi clic e inizia la tua prima campagna di marketing Snapmyle.'
+        snap: Snap
+        descriptionsnap: 'Che si tratti di prodotti o buoni, le tue offerte possono essere facilmente create. Determina un periodo di tempo e il numero di buoni dell''offerta e inseriscilo nel tuo negozio o in luoghi popolari.'
+        smyle: Smyle
+        descriptionsmyle: 'Hai sempre accesso alle tue campagne di marketing. Ti mostriamo quanto spesso la tua offerta è stata acquisita e quanti clienti hanno riscattato la tua offerta.'
+    customers:
+        smalltitle: RECESSIONI
+        title: 'Cosa dicono i nostri clienti'
+        descriptioncustomers: 'Semplificare scenari altamente efficienti e iniziative 24/7 in modo unico. Combina idee multifunzionali con un servizio clienti proattivo. Definisci consapevolmente il capitale intellettuale 2.0 attraverso partnership centrate sull''utente.'
+        name: 'Crystal Gordon'
+        country: 'STATI UNITI'
+    pricing:
+        biggtitle: 'Esegui l''upgrade a pro'
+        card1:
+            title: Personale
+            currency: CHF
+            price: '75'
+            numbercoupons: '100'
+            coupons: Buoni
+            description1: 'Definire target'
+            description1-1: 'Diversi Campi'
+            description2: null
+            description3: null
+        card2:
+            title: Standard
+            currency: CHF
+            price: '175'
+            numbercoupons: '250'
+            coupons: Buoni
+            description1: 'Definire target'
+            description1-1: 'Diversi Campi'
+            description2:
+                paragraph1: 'Dipendenza spaziale'
+                paragraph2: 'notifica push'
+            description3: null
+        card3:
+            title: Professionale
+            currency: CHF
+            price: '450'
+            numbercoupons: '750'
+            coupons: Buoni
+            description1: 'Definire target'
+            description1-1: 'Diversi Campi'
+            description2:
+                paragraph1: 'Dipendenza spaziale'
+                paragraph2: 'notifica push'
+            description3: 'Diverse posizioni'
+        titlebutton: 'SCEGLI QUESTO PIANO'
+    faq:
+        title: 'Domande frequenti'
+        firsttitle: 'Posso attivare più campagne contemporaneamente?'
+        firstdescription: 'Dipende dal pacchetto che hai selezionato, altrimenti puoi creare e attivare più campagne contemporaneamente.'
+        secondtitle: 'In che modo Snapmyle mi aiuta a inserire i miei buoni?'
+        seconddescription: 'Snapmyle posiziona i coupon per te. Con un algoritmo casuale integrato, portiamo i tuoi buoni nei salotti dei tuoi clienti.'
+        thirdtitle: 'Posso vedere le statistiche sulle mie campagne?'
+        thirddescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante.'
+        fourthtitle: 'Quale metodo di pagamento viene accettato?'
+        fourthdescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante.'
+    download:
+        biggtitle: 'Può essere scaricato ovunque'
+        smalltitle: 'Questa piattaforma è disponibile per tutti i telefoni cellulari, tablet e computer.'
+        description: 'Funziona su iOS 10.0.5+, Android Kitkat e versioni successive.'
+    copyright:
+        title: 'COPYRIGHT © 2018. TUTTI I DIRITTI RISERVATI.BY'
+        press: STAMPA
+        terms: TERM
+        privacy: PRIVACY
+    signinmodal:
+        signin: Login
+        newaccount: 'Nuovo account'
+        username: 'Nome Utente'
+        usermessage: 'Per favore inserisci il tuo nome utente'
+        password: Password
+        show: 'Mostra Password'
+        passwordmessage: 'Per favore inserisci la tua password'
+        remember: Ricordami
+        login: Login
+        forgotpassword: 'Hai dimenticato la password?'
+    newaccountmodal:
+        firstname: Nome
+        namemessage: 'Per favore inserisci il tuo nome'
+        lastname: Cognome
+        lastnamemessage: 'Per favore inserisci il tuo cognome'
+        username: 'Nome utente'
+        usernamemessage: 'Per favore inserisci il tuo nome utente'
+        email: email
+        emailerror: 'Indirizzo email non valido!'
+        password: Password
+        passworderror: 'Password non valido!'
+        confirmationpassword: 'Conferma password'
+        confirmationerror: 'La password non può essere confermata!'
+        validation: 'Sono d''accordo'
+        terms: Condizioni
+        login: Login
+    forgotpasswordmodal:
+        description: 'Hai dimenticato la password? Per favore inserisci il tuo indirizzo email. A breve riceverai un link al tuo indirizzo email per creare una nuova password.'
+        email: email
+        message: 'Si prega di inserire un indirizzo email valido'
+        back: 'Torna alla registrazione'
+profilepage:
+    profile:
+        title: Profilo
+        informations:
+            firstname: Nome
+            lastname: Cognome
+            username: 'Nome utente'
+            email: email
+            street: Strada
+            city: Città
+            country: Paese
+            age: Età
+            gender:
+                kind: Sesso
+                men: Uomo
+                women: Donna
+                gender: Sesso
+            titleimage: 'La tua foto qui'
+            removefile: 'Elimina il file'
+            submit: Presentare
+            cancel: Annullare
+    password:
+        title: 'Gestione della password'
+        oldpassword: 'Vecchia password'
+        newpassword: 'Nuova password'
+        confirmationpass: 'Conferma la tua nuova password'
+        submit: Presentare
+        cancel: Annullare
+    favorites:
+        title: Preferiti
+        namelist: Preferiti
+        list:
+            first: Moda
+            second: Elettronica
+            third: 'Bellezza e Benessere'
+            forth: Sport
+            fifth: Viaggi
+            sixth: Auto
+            seventh: Alimentari
+            eighth: Altro
+        submit: Presentare
+        cancel: Annullare
+topmenupage:
+    menu:
+        myprofil: 'il mio profilo'
+        landingpage: 'Vai alla pagina finale'
+        disconnect: Disconnetere
+        backdashboard: 'torna al Dashboard'
+userbackinindexpage:
+    dashboard:
+        title: Dashboard
+        campaingsmanagement: campaingsmanagement
+        ownersmanagement: ownersmanagement
+        createcampaing: 'Crea una campagna'
+        listecampaings: 'Elenco di tutte le campagne'
+        currentcampaigns: 'Campagne attuali'
+        pendingcoupons: 'Buoni in sospeso'
+        captureddeals: 'Offerte catturate'
+        redeemedcoupons: 'Buoni riscattati'
+        weeklystatistics: 'Statistiche settimanali'
+        usageoVerview: 'Riepilogo utilizzo'
+        redeemed: Riscattato
+dealslistpage:
+    list:
+        title: 'elenco delle campagne'
+        verifycoupon: 'verifica il tuo buono'
+        verify: verifica
+        addcampaing: 'Aggiungi una campagna'
+        informations:
+            iD: ID
+            creator: Inventore
+            title: Titolo
+            category: Categoria
+            label: Label
+            position: Positione
+            coupon: Buono
+            actions: Azioni
+        list: Liste
+        edit: Modifica
+        delete: Cancellare
+insertionpage:
+    addcoupon:
+        step1:
+            biggtitle: 'Nuova forma di campagna'
+            smalltitle: 'Si prega di selezionare il tipo di buono che si desidera utilizzare'
+            onlinecoupon: 'Buono online'
+            reedemcoupon: 'Gutschein einlösen'
+            continue: 'Riscatta il buono'
+        step2:
+            biggtitle: 'Nuova forma di campagna'
+            smalltitle: Titolo
+            category: Categoria
+            categoryvalue: 'Valore della categoria'
+            description: Descrizione
+            picture: Immagine
+            titlepicture: 'Immagine di copertina'
+            continue: Continuare
+        step3:
+            biggtitle: 'Nuova forma di campagna'
+            smalltitle: 'Numero di buoni'
+            credit:
+                title: Credits
+                numbercoupon: '100 Buoni'
+            price: Prezzo
+            newprice: 'Nuovo prezzo'
+            couponvalid: 'Buono valido fino al'
+            shoplink: 'Link per riscattare il coupon'
+            website: 'sito web'
+            adress: Strada
+            continue: Continuare
+        step4:
+            biggtitle: 'Nuova forma di campagna'
+            smalltitle: Sesso
+            gender:
+                men: maschio
+                women: femminile
+            targerage:
+                title: 'fascia di età'
+                firstchoice: 18-25
+                secondchoice: 26-35
+                thirdchoice: 36-50
+                forthchoice: 50+
+            targetinteress:
+                title: Interessi
+                firstcategory: Moda
+                secondcategory: Elettronica
+                thirdcategory: 'Bellezza e Benessere'
+                forthcategory: Sport
+                fifthcategory: Viaggi
+                sixthcategory: Auto
+                sevethcategory: Alimentari
+                eighthcategory: Altro
+            campaigndate: 'data della campagna'
+            continue: Continuare
+editdealspage:
+    title: 'Modifica delle offerte'
+    edit:
+        editiontitle: 'Modifica campagna'
+        compaignliste: 'elenco delle campagne'
+        titlefield: Titel
+        category:
+            title: Categoria
+            category1: Moda
+            category2: Elettronica
+            category3: 'Bellezza e Benessere'
+            category4: Sport
+            category5: Viaggi
+            category6: Auto
+            category7: Alimentari
+            category8: Altro
+        couponlimit: 'Limite di buoni'
+        datevalidate: 'Conferma la data'
+        beginingdate: 'data di inizio'
+        endingdate: 'data di fine'
+        price: Prezzo
+        newprice: 'Nuovo Prezzo'
+        description: Descrizione
+        imagetitle: 'Aggiungi immagine'
+        removefile: 'Rimuovi il file'
+        adress: Strada
+        newprice2: 'Nuovo prezzo'
+        targetage:
+            title: 'fascia di età'
+            firstchoice: 18-25
+            secondchoice: 26-35
+            thirdchoice: 36-50
+            forthchoice: 50+
+        gender:
+            title: Sesso
+            men: Uomo
+            women: Donna
+        typecoupon:
+            onlinecoupon: 'Buono online'
+            reedemcoupon: 'Riscatta il buono'
+        submit: Sottoscrivi
+pendigshowpage:
+    title: Buono
+    verifycoupon: 'Controlla il buono'
+    verify: verificare
+    orderid: 'numero d''ordine'
+    creationdate: 'Data di creazione'
+    buyerfirstname: 'Nome dell''acquirente'
+    buyerlastname: 'Cognome dell''acquirente'
+    status: Stato

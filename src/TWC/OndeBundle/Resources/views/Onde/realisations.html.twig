@@ -1,0 +1,492 @@
+{% extends 'TWCOndeBundle::ondelayout.html.twig' %}
+{% block Title %}Homepage {{parent()}}{% endblock %}
+{% block Style %}
+	{{parent()}}
+	<style>
+		.xs-post-entry-title a{
+			    color: #626c84;
+		}
+		.mt-5{
+			margin-top: 10rem!important;
+		}
+		.xs-banner-inner-section{
+			padding-bottom: 0px;
+		}
+		.point-cu {
+		    color: #5cb37c !important;
+		    text-decoration: underline;
+		}
+		.breadcrumb{
+			margin-top:15px;position: absolute;right: 15px;
+		}
+		@media only screen and (max-width: 992px){
+			.breadcrumb{
+				margin-top:15px;position: initial;
+			}
+			.link-re {
+			     text-align: initial !important; 
+			}
+		}
+	</style>
+	{% if app.request.locale == "ar" %}
+		<style type="text/css" media="screen">
+			
+			
+			.xs-unorder-list li i{
+				padding-left: 17px;
+			}
+			.text-icon-mis{
+				text-align: center !important;
+			}
+			.xs-contact-form .input-group-text{
+				border-left: 2px solid #eeeeee;
+				border-right: 0;
+			}
+			.xs-contact-form input:not([type="submit"]), .xs-contact-form textarea{
+				border-left: 0;
+				border-right: 2px solid #eeeeee;
+			}
+			.list-re{
+				text-align: right !important;
+	    		margin-right: 50px !important;
+			}
+			.xs-unorder-list li:before{
+			    position: absolute;
+			    content: "";
+			    left: auto;
+			    top: 0;
+			    font-family: "FontAwesome";
+			    color: #18bfc3;
+			    right: -45px;
+			}
+			.content-center{
+				padding-right: 0px !important;
+			}
+			.black-title{
+				text-align: right !important;
+			}
+			.link-re{
+				text-align: right !important;
+			}
+		</style>
+	{% endif %}
+{% endblock %}
+{% block body %}
+	{% if app.request.locale != "ar" %}
+		{% include "TWCOndeBundle:Default:header.html.twig" %} 
+	{% endif %}
+	{% if app.request.locale == "ar" %}
+		{% include "TWCOndeBundle:Default:headerAr.html.twig" %} 
+	{% endif %}
+	
+	<section class="xs-banner-inner-section parallax-window" style="background-image:url('{{asset('front/images/backgrounds/parralax_3.jpg')}}');">
+		<div class="xs-black-overlay"></div>
+			{# <div class="container">
+				<div class="color-white xs-inner-banner-content">
+					<ul class="xs-breadcumb">
+						<li class="badge badge-pill badge-primary"><a href="index.html" class="color-white"> {{"realisation.text1"|trans}} /</a> {{"realisation.text2"|trans}}</li>
+					</ul>
+				</div>
+			</div> #}
+			
+		</section>
+	</section>
+
+	<main class="xs-main">
+		<section class="parallax-window xs-content-section-padding" style="">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 offset-lg-3 order-md-2 order-lg-first">
+						<div class=" xs-inner-banner-content pb-3">
+						<h2 class="color-title-b">{{"realisation.center-title"|trans}}</h2>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-12 text-lg-right order-md-first order-lg-2">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="{{path('twc_onde_homepage')}}">{{"header.accueil"|trans}}</a></li>
+							<li class="breadcrumb-item active" aria-current="page">{{"header.aProposONDE.realisations"|trans}}</li>
+						</ol>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 content-center">
+				        <div class="xs-event-content">
+				        	{# <h4>{{"realisation.center-title"|trans}}</h4> #}
+							<p class="mission-descr">{{"realisation.description"|trans}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col-lg-6">
+						<div class="xs-service-slider-content">
+							<h2 class="black-title">{{"realisation.section1.title"|trans}}</h2>
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="xs-unorder-list check list-re">
+										<li data-toggle="modal" data-target="#openPop3" class="link-re point-cu">
+											<bdi>{{"realisation.section1.desc1"|trans}}</bdi></li>
+										<li data-toggle="modal" data-target="#openRealisationDesc2" class="link-re point-cu"><bdi>{{"realisation.section1.desc2"|trans}}</bdi></li>
+									</ul><!-- .xs-unorder-list .check END -->
+								</div>
+								<div class="col-md-12">
+									<ul class="xs-unorder-list check list-re">
+										<li class="link-re"><bdi>{{"realisation.section1.desc3"|trans}}</bdi></li>
+										{# <li>Fund Collect</li> #}
+									</ul><!-- .xs-unorder-list .check END -->
+								</div>
+							</div>
+						</div><!-- .xs-service-slider-content END -->
+					</div>
+					<div class="col-lg-6 bkg-re" style="background-image:url('{{asset('assets/images/img1.jpg')}}');">
+					</div>
+				</div>
+				<hr class="ligne-sepa">
+				<div class="row mt-5">
+					<div class="col-lg-6 bkg-re" style="background-image:url('{{asset('assets/images/img3.jpg')}}');">
+					</div>
+					<div class="col-lg-6">
+						<div class="xs-service-slider-content">
+							<a href="{{ asset('assets/telechargements/tf.pptx') }}" title="">
+								<h2 class="black-title"><bdi>{{"realisation.section2.title"|trans}}</bdi></h2>
+							</a>
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="xs-unorder-list check list-re">
+										<li class="link-re"><bdi>{{"realisation.section2.desc1"|trans}}</bdi></li>
+										<li class="link-re"><bdi>{{"realisation.section2.desc2"|trans}}</bdi></li>
+									</ul><!-- .xs-unorder-list .check END -->
+								</div>
+								<div class="col-md-12">
+									<ul class="xs-unorder-list check list-re">
+										<li class="link-re"><bdi>{{"realisation.section2.desc3"|trans}}</bdi></li>
+										{# <li>Fund Collect</li> #}
+									</ul><!-- .xs-unorder-list .check END -->
+								</div>
+							</div>
+						</div><!-- .xs-service-slider-content END -->
+					</div>
+				</div>
+				<hr class="ligne-sepa">
+				<div class="row mt-5">
+					<div class="col-lg-6">
+						<div class="xs-service-slider-content">
+							<h2 class="black-title"><bdi>{{"realisation.section3.title"|trans}}</bdi></h2>
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="xs-unorder-list check list-re">
+										<li class="link-re"><a href="https://2511.ma/" target="_blank" class="link-re point-cu"><bdi>{{"realisation.section3.desc1"|trans}}</bdi></a></li>
+										<li data-toggle="modal" data-target="#openSensibilisationDesc2" class="link-re point-cu"><bdi>{{"realisation.section3.desc2"|trans}}</bdi></li>
+									</ul><!-- .xs-unorder-list .check END -->
+								</div>
+								<div class="col-md-12">
+									<ul class="xs-unorder-list check list-re">
+										<li class="link-re">{{"realisation.section3.desc3"|trans}}</li>
+										<li class="link-re">{{"realisation.section3.desc4"|trans}}</li>
+										{# <li>Fund Collect</li> #}
+									</ul><!-- .xs-unorder-list .check END -->
+								</div>
+							</div>
+						</div><!-- .xs-service-slider-content END -->
+					</div>
+					<div class="col-lg-6 bkg-re" style="background-image:url('{{asset('assets/images/abus.jpg')}}');background-size: contain;">
+					</div>
+				</div>
+				<hr class="ligne-sepa">
+				<div class="row mt-5">
+					<div class="col-lg-6 bkg-re" style="background-image:url('{{asset('assets/images/img7.jpg')}}');">
+					</div>
+					<div class="col-lg-6">
+						<div class="xs-service-slider-content">
+							<h2 class="black-title">{{"realisation.section4.title"|trans}}</h2>
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="xs-unorder-list check list-re">
+										<li class="link-re point-cu" data-toggle="modal" data-target="#openPop2">{{"realisation.section4.desc1"|trans}}</li>
+										<li class="link-re point-cu" data-toggle="modal" data-target="#openPopOmnisports">{{"realisation.section4.desc2"|trans}}</li>
+									</ul><!-- .xs-unorder-list .check END -->
+								</div>
+								<div class="col-md-12">
+									<ul class="xs-unorder-list check list-re">
+										<li class="link-re point-cu" data-toggle="modal" data-target="#openPop1">{{"realisation.section4.desc3"|trans}}</li>
+										{# <li>Fund Collect</li> #}
+									</ul><!-- .xs-unorder-list .check END -->
+								</div>
+							</div>
+						</div><!-- .xs-service-slider-content END -->
+					</div>
+				</div>
+				<hr class="ligne-sepa">
+				<div class="row mt-5">
+					<div class="col-lg-6">
+						<div class="xs-service-slider-content">
+							<a href="{{ asset('assets/telechargements/Présentation_Résumé_VF.pptx') }}" title="">
+							<h2 class="black-title">{{"realisation.section5.title"|trans}} </h2>
+							</a>
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="xs-unorder-list check list-re">
+										<li class="link-re">{{"realisation.section5.desc1"|trans}}</li>
+										{# <li class="link-re">{{"realisation.section5.desc2"|trans}}</li> #}
+									</ul><!-- .xs-unorder-list .check END -->
+								</div>
+								<div class="col-md-12">
+									<ul class="xs-unorder-list check list-re">
+										<li class="link-re">{{"realisation.section5.desc3"|trans}}</li>
+										<li class="link-re">{{"realisation.section5.desc4"|trans}}</li>
+										{# <li>Fund Collect</li> #}
+									</ul><!-- .xs-unorder-list .check END -->
+								</div>
+							</div>
+						</div><!-- .xs-service-slider-content END -->
+					</div>
+					<div class="col-lg-6 bkg-re" style="background-image:url('{{asset('assets/images/img9.jpg')}}');">
+					</div>
+				</div>
+				<hr class="ligne-sepa">
+				<div class="row mt-5">
+					<div class="col-lg-6 bkg-re" style="background-image:url('{{asset('assets/images/img11.jpg')}}');">
+					</div>
+					<div class="col-lg-6">
+						<div class="xs-service-slider-content">
+							<h2 class="black-title">{{"realisation.section6.title"|trans}}</h2>
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="xs-unorder-list check list-re">
+										<li class="link-re">{{"realisation.section6.desc1"|trans}}</li>
+										<li class="link-re">{{"realisation.section6.desc2"|trans}}</li>
+									</ul><!-- .xs-unorder-list .check END -->
+								</div>
+								<div class="col-md-12">
+									<ul class="xs-unorder-list check list-re">
+										<li class="link-re">{{"realisation.section6.desc3"|trans}}</li>
+										{# <li>Fund Collect</li> #}
+									</ul><!-- .xs-unorder-list .check END -->
+								</div>
+							</div>
+						</div><!-- .xs-service-slider-content END -->
+					</div>
+				</div>
+			</div><!-- .container end -->
+		</section>
+	</main>
+	<div class="modal fade" id="openPopOmnisports" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:75px;">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<div class="row">
+	      		<div class="col-lg-12">
+	      			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		                <span aria-hidden="true">&times;</span>
+		            </button>
+	      		</div>
+	      	</div>
+	      	<div class="row">
+	      		<div class="col-lg-12">
+	      			<h2 class="titleP">{{"presentation.realisation.terrainsOmnisports.title"|trans}}</h2>
+	      		</div>
+	      		<div class="col-lg-12 bkg-re" style="background-image:url('{{asset('front/images/backgrounds/terrainOmnsport.png')}}');background-size: contain;height: 300px;margin-bottom: 24px;">
+				</div>
+	      	</div>
+	        
+			<div class="row">
+				<div class="col-md-12">
+					<p class="link-re">{{"presentation.realisation.terrainsOmnisports.description"|trans}} :</p>
+				</div>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="openPop1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:75px;">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<div class="row">
+	      		<div class="col-lg-12">
+	      			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		                <span aria-hidden="true">&times;</span>
+		            </button>
+	      		</div>
+	      	</div>
+	      	<div class="row">
+	      		<div class="col-lg-12">
+	      			<h2 class="titleP">{{"presentation.realisation.second.title"|trans}}</h2>
+	      		</div>
+	      		<div class="col-lg-12 bkg-re" style="background-image:url('{{asset('front/images/backgrounds/douar.jpg')}}');background-size: contain;height: 300px;margin-bottom: 24px;">
+				</div>
+	      	</div>
+	        
+			<div class="row">
+				<div class="col-md-12">
+					<p class="link-re">{{"presentation.realisation.second.description1"|trans}} :</p>
+					<ul class="xs-unorder-list check list-re">
+						<li><p class="link-re">{{"presentation.realisation.second.description2"|trans}}</p></li>
+					</ul>
+				</div>
+				<div class="col-md-12">
+					<ul class="xs-unorder-list check list-re">
+						<li><p class="link-re">{{"presentation.realisation.second.description3"|trans}}</p></li>
+					</ul>
+				</div>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="openPop2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:75px;">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<div class="row">
+	      		<div class="col-lg-12">
+	      			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		                <span aria-hidden="true">&times;</span>
+		            </button>
+	      		</div>
+	      	</div>
+	      	<div class="row">
+	      		<div class="col-lg-12">
+	      			<h2 class="titleP">{{"presentation.realisation.third.title"|trans}}</h2>
+	      		</div>
+	      		<div class="col-lg-12 bkg-re" style="background-image:url('{{asset('front/images/backgrounds/kids1.jpg')}}');background-size: contain;height: 300px;margin-bottom: 24px;">
+				</div>
+	      	</div>
+	        
+			<div class="row">
+				<div class="col-md-12">
+					<p class="link-re">{{"presentation.realisation.third.description1"|trans}} :</p>
+					<ul class="xs-unorder-list check list-re">
+						<li class="firt-list"><p class="link-re">{{"presentation.realisation.third.description2"|trans}} </p></li>
+						<li><p class="link-re">{{"presentation.realisation.third.description3"|trans}}</p></li>
+					</ul><!-- .xs-unorder-list .check END -->
+				</div>
+				<div class="col-md-12">
+					<ul class="xs-unorder-list check list-re">
+						<li><p class="link-re">{{"presentation.realisation.third.description4"|trans}} :</p></li>
+					</ul><!-- .xs-unorder-list .check END -->
+				</div>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="openPop3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:75px;">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<div class="row">
+	      		<div class="col-lg-12">
+	      			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		                <span aria-hidden="true">&times;</span>
+		            </button>
+	      		</div>
+	      	</div>
+	      	<div class="row">
+	      		<div class="col-lg-12">
+	      			<h2 class="titleP">{{"presentation.realisation.first.title"|trans}}</h2>
+	      		</div>
+	      		<div class="col-lg-12 bkg-re" style="background-image:url('{{asset('front/images/backgrounds/vacc.jpg')}}');background-size: contain;height: 300px;margin-bottom: 24px;">
+				</div>
+	      	</div>
+	        
+			<div class="row">
+				<div class="col-md-12">
+					<p class="link-re">{{"presentation.realisation.first.description"|trans}}</p>
+				</div>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="openRealisationDesc2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:75px;">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<div class="row">
+	      		<div class="col-lg-12">
+	      			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		                <span aria-hidden="true">&times;</span>
+		            </button>
+	      		</div>
+	      	</div>
+	      	<div class="row">
+	      		<div class="col-lg-12">
+	      			<h2 class="titleP">{{"presentation.realisation.carnetSante.title"|trans}}</h2>
+	      		</div>
+	      		<div class="col-lg-12 bkg-re" style="background-image:url('{{asset('front/images/backgrounds/ph_carnet_sante.jpg')}}');background-size: contain;height: 300px;margin-bottom: 24px;">
+				</div>
+	      	</div>
+	        
+			<div class="row">
+				<div class="col-md-12">
+					<p class="link-re">{{"presentation.realisation.carnetSante.description"|trans}}</p>
+				</div>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="openSensibilisationDesc2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:75px;">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<div class="row">
+	      		<div class="col-lg-12">
+	      			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		                <span aria-hidden="true">&times;</span>
+		            </button>
+	      		</div>
+	      	</div>
+	        
+			<div class="row">
+				<div class="col-md-12">
+					<center>
+						<video width="620" height="240" controls>
+						  <source src="{{asset('assets/images/videos/lapetite_bonne.mp4')}}" type='video/mp4'>
+						Your browser does not support the video tag.
+						</video>
+					</center>
+				</div>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	{# <div class="modal fade" id="openSensibilisationDesc3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:75px;">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<div class="row">
+	      		<div class="col-lg-12">
+	      			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		                <span aria-hidden="true">&times;</span>
+		            </button>
+	      		</div>
+	      	</div>
+	        
+			<div class="row">
+				<div class="col-md-12">
+					<center>
+						<video width="620" height="340" controls>
+						  <source src="{{asset('assets/images/videos/ONDE_Movies2.mp4')}}" type='video/mp4;'>
+						Your browser does not support the video tag.
+						</video>
+					</center>
+				</div>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div> #}
+	{{ render(controller("TWCOndeBundle:Default:footer")) }}
+{% endblock %}
+{% block custom_js %}
+	<script type="text/javascript">
+		$( document ).ready(function() {
+		    $(".blue-header").css('display','none');
+		    $(".selected-it").addClass("active");
+		    $(".header-transparent .nav-menu li .selected-it .submenu-indicator-chevron").css("border-color","transparent #5cb37c #5cb37c transparent");
+		});
+	</script>
+{% endblock %}

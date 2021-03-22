@@ -1,0 +1,19 @@
+.xs-missions-section-v1{
+    margin-top: 120px;
+}
+.header-transparent {
+    background-color: white;
+    
+}
+.header-transparent .nav-menu li a {
+    color: #041d57;
+}
+.header-transparent .nav-menu li a .submenu-indicator-chevron {
+    border-color: transparent #041d57 #041d57 transparent;
+}
+.header-transparent .nav-brand{
+    filter: none;
+}
+.header-transparent .nav-brand{
+    background-image: none;
+}

@@ -1,0 +1,409 @@
+{% extends 'TWCEnfantsBundle::enfantlayout.html.twig' %}
+{% block Title %}Homepage {{parent()}}{% endblock %}
+{% block Style %}
+	{{parent()}}
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
+	<style type="text/css">
+		/*.languagesButton{
+			float: right;
+		    right: 4%;
+		    position: relative;
+		}*/
+    .languagesButton{
+      float: right;
+      right: 0%;
+      top: -40px;
+      z-index: 100;
+      position: relative;
+    }
+		.nav-icon{
+			width: 15px;
+		    height: 15px;
+		    line-height: 15px;
+		    font-size: 10px;
+		}
+    body{
+      background-color: #D2BEDD;
+    }
+    .demo{
+      background-color: #BFE0DC;
+      margin-bottom: 0px !important;
+    }
+    /*.lSSlideOuter {
+      width: 100%;
+    }*/
+    .left-image{
+      position: absolute;
+      top: 40%;
+      left: 20px;
+    }
+    .left-image > img{
+      max-width: 160px;
+      min-width: 160px;
+    }
+    .right-image{
+      position: absolute;
+      top: 100%;
+      right: 20px;
+    }
+    .right-image > img{
+      max-width: 160px;
+      min-width: 160px;
+    }
+    .fixie{
+      text-align: center;
+      position: relative
+    }
+    .footList{
+      display: inline-block;
+    }
+    .separator{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .slider1 > .demo{
+      width: 70% !important;margin-left: 15% !important;margin-bottom: 0%;
+    }
+    .slider2 > .demo{
+      width: 70% !important;margin-left: 15% !important;
+    padding: 80px 50px;
+    }
+    .footer_img{
+      width: 70% !important;
+      margin-left: 15% !important;
+      margin-bottom: 0%;
+      background-color: #d2bedd;
+      margin-bottom: 0px !important;
+      position: absolute;
+      bottom: 120px;
+    }
+    .jeu_content{
+      background-size: cover;background-repeat: no-repeat;background-position: center;min-height: 180px;margin:5px;
+    }
+    .cadre_content{
+      background-size: cover;background-repeat: no-repeat;background-position: center;min-height: 180px;position:absolute;width: calc(100% - 30px);top: 5px;
+    }
+    @media (max-width: 767px) {
+        .left-image{
+
+          left: 0px;
+          z-index: 99 !important;
+        }
+        .left-image > img{
+          max-width: 80px;
+          min-width: 80px;
+          
+        }
+        .right-image{
+
+          right: 0px;
+          z-index: 99 !important;
+        }
+        .right-image > img{
+          max-width: 80px;
+            min-width: 80px;
+            
+        }
+        .slider1 > .demo{
+          width: 100% !important;
+          margin-left: 0% !important;
+        }
+        .slider2 > .demo{
+          padding: 30px 0px !important;
+          width: 80% !important;
+          margin-left: 10% !important;
+        }
+        .section-title > h2 {
+          font-size: 20px !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .footer_img{
+          bottom: 56px !important;
+          width: 80% !important;
+          margin-left: 10% !important;
+        }
+        .jeu_content{
+          min-height: 175px !important;
+          margin: 8px !important;
+        }
+    }
+    
+    {% if app.request.locale == "ar" %}
+      .section-title{
+        direction: rtl;
+      }
+    {% endif %}
+	</style>
+{% endblock %}
+{% block body %}
+
+<!--====================================
+——— BEGIN MAIN SLIDE LIST
+===================================== -->
+<section class="slider1">
+	<div class="demo" style="">
+    {{ render(controller("TWCEnfantsBundle:Default:topMenu")) }}
+	    
+	</div>
+</section>
+<section class="slider2">
+  <div class="demo" style="">
+    <div class="left-image">
+
+        <img class="d-inline-block" src="{{asset('assets/images/fille.png')}}" alt="Kidz School" >
+
+    </div>
+
+    <div class="right-image">
+      <img class="d-inline-block" src="{{asset('assets/images/garcon.png')}}" alt="Kidz School" >
+    </div>
+    
+    
+    <div class="section-title align-items-baseline mb-4">
+      <h2 class="px-0 mb-0" style="color: #605F5F !important">{{"espaceEnfant.jeuxLudiques"|trans}}</h2>
+    </div>
+    <div class="games">
+        <div class="row py-4 align-items-center">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="position:relative">
+          <a href="http://game3.thewebcake.com/" target="_blank">
+            <div class="jeu_content" style="background-image: url('{{asset('assets/images/jeux11.png')}}');">
+            </div>
+            <div class="cadre_content" style="background-image: url('{{asset('assets/images/nuage.png')}}');">
+              
+            </div>
+          </a>  
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <a href="http://game1.thewebcake.com/" target="_blank">
+            <div class="jeu_content" style="background-image: url('{{asset('assets/images/jeux12.png')}}');">
+            </div>
+            <div class="cadre_content" style="background-image: url('{{asset('assets/images/nuage.png')}}');">
+              
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <a href="http://game2.thewebcake.com/" target="_blank">
+            <div class="jeu_content" style="background-image: url('{{asset('assets/images/jeux13.png')}}');">
+            </div>
+            <div class="cadre_content" style="background-image: url('{{asset('assets/images/nuage.png')}}');">
+              
+            </div>
+          </a>
+          </div>
+        </div>
+    </div>
+
+    <div class="section-title align-items-baseline mb-4">
+      <h2 class="px-0 mb-0" style="color: #605F5F !important">{{"espaceEnfant.jeuxDivertissement"|trans}}</h2>
+    </div>
+    <div class="games">
+        <div class="row py-4 align-items-center">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="position:relative">
+          <a href="http://game4.thewebcake.com/" target="_blank">
+            <div class="jeu_content" style="background-image: url('{{asset('assets/images/jeu3.png')}}');">
+            </div>
+            <div class="cadre_content" style="background-image: url('{{asset('assets/images/nuage.png')}}');">
+              
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <a href="https://td2tl.com/dont-crash-preview/" target="_blank">
+            <div class="jeu_content" style="background-image: url('{{asset('assets/images/jeu2.png')}}');">
+            </div>
+            <div class="cadre_content" style="background-image: url('{{asset('assets/images/nuage.png')}}');">
+              
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <a href="https://showcase.codethislab.com/games/snake_attack/" target="_blank">
+            <div class="jeu_content" style="background-image: url('{{asset('assets/images/jeu1.png')}}');">
+            </div>
+            <div class="cadre_content" style="background-image: url('{{asset('assets/images/nuage.png')}}');">
+              
+            </div>
+          </a>
+          </div>
+        </div>
+    </div>
+
+    <div class="section-title align-items-baseline mb-4">
+      <h2 class="px-0 mb-0" style="color: #605F5F !important">{{"espaceEnfant.bandesDessinées"|trans}}</h2>
+    </div>
+    <div class="games">
+        <div class=" py-4 align-items-center" >
+          <div class="row" id="lightgallery">
+            <a class="offset-lg-2 offset-md-2 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-exthumbimage="{{asset('assets/images/bd1-min.jpg')}}" href="{{asset('assets/images/bd1-min.jpg')}}">
+              <div>
+                <div style="background-image: url('{{asset('assets/images/bd1-min.jpg')}}');background-size: cover;background-repeat: no-repeat;background-position: center;min-height: 180px;margin:5px;">
+                </div>
+                <div style="background-image: url('{{asset('assets/images/nuage.png')}}');background-size: cover;background-repeat: no-repeat;background-position: center;min-height: 180px;position:absolute;width: calc(100% - 30px);top: 5px;">
+                </div>
+              </div>
+            </a>
+         
+          
+            <a class=" col-lg-4 col-md-4 col-sm-4 col-xs-12" data-exthumbimage="{{asset('assets/images/bd2-min.jpg')}}" href="{{asset('assets/images/bd2-min.jpg')}}">
+              <div >
+                <div style="background-image: url('{{asset('assets/images/bd2-min.jpg')}}');background-size: cover;background-repeat: no-repeat;background-position: center;min-height: 180px;margin:5px;">
+                </div>
+                <div style="background-image: url('{{asset('assets/images/nuage.png')}}');background-size: cover;background-repeat: no-repeat;background-position: center;min-height: 180px;position:absolute;width: calc(100% - 30px);top: 5px;">
+                </div>
+              </div>
+            </a>
+          </div>
+          {# <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div style="background-image: url('{{asset('assets/images/jeu7.png')}}');background-size: cover;background-repeat: no-repeat;background-position: center;min-height: 180px;margin:5px;">
+            </div>
+            <div style="background-image: url('{{asset('assets/images/nuage.png')}}');background-size: cover;background-repeat: no-repeat;background-position: center;min-height: 180px;position:absolute;width: calc(100% - 30px);top: 5px;">
+              
+            </div>
+          </div> #}
+        </div>
+    </div>
+
+   {#  <div class="section-title align-items-baseline mb-4">
+      <h2 class="px-0 mb-0" style="color: #605F5F !important">Meilleurs photo et videos</h2>
+    </div>
+    <div class="games">
+        <div class="row py-4 align-items-center">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="position:relative">
+            <div style="background-image: url('{{asset('assets/images/2.png')}}');background-size: contain;background-repeat: no-repeat;background-position: center;min-height: 180px;margin:5px;">
+            </div>
+            <div style="background-image: url('{{asset('assets/images/nuage.png')}}');background-size: contain;background-repeat: no-repeat;background-position: center;min-height: 180px;position:absolute;width: calc(100% - 30px);top: 5px;">
+              
+            </div>
+            
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div style="background-image: url('{{asset('assets/images/2.png')}}');background-size: contain;background-repeat: no-repeat;background-position: center;min-height: 180px;margin:5px;">
+            </div>
+            <div style="background-image: url('{{asset('assets/images/nuage.png')}}');background-size: contain;background-repeat: no-repeat;background-position: center;min-height: 180px;position:absolute;width: calc(100% - 30px);top: 5px;">
+              
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div style="background-image: url('{{asset('assets/images/2.png')}}');background-size: contain;background-repeat: no-repeat;background-position: center;min-height: 180px;margin:5px;">
+            </div>
+            <div style="background-image: url('{{asset('assets/images/nuage.png')}}');background-size: contain;background-repeat: no-repeat;background-position: center;min-height: 180px;position:absolute;width: calc(100% - 30px);top: 5px;">
+              
+            </div>
+          </div>
+        </div>
+    </div> #}
+      
+  </div>
+  <div class="demo" style="">
+    <div class="pt-8 pb-7" style="background-image: url('{{asset('assets/images/fille.png')}}');background-position: center;background-repeat: no-repeat;background-size: 160px;min-height:300px">
+    </div>
+  </div>
+</section>
+
+
+
+</div> <!-- element wrapper ends -->
+
+<!-- ====================================
+      ———	FOOTER
+      ===================================== -->
+<footer class="footer-bg-img" style="position:relative">
+
+  <div class="footer_img pt-3" style="">
+
+    <!-- Copy Right -->
+    <div class="">
+      <div class="">
+        {# <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="fixie">
+              <div class="footList">
+                About
+                <span class="separator">|</span>
+              </div>
+              <div class="footList">
+                Advertising
+                <span class="separator">|</span>
+              </div>
+              <div class="footList">
+                Contact
+                <span class="separator">|</span>
+              </div>
+              <div class="footList">
+                Conditions
+                <span class="separator">|</span>
+              </div>
+              <div class="footList">
+                Cookies
+                <span class="separator">|</span>
+              </div>
+              <div class="footList">
+                Paramètres de confidentialité
+                <span class="separator">|</span>
+              </div>
+            </div>
+          </div>
+
+        </div> #}
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3">
+            <div class="fixie">
+              <div class="footList">
+                ©2020 {{"footer.copyright.first"|trans}} <a href="{{path('twc_onde_homepage')}}">{{"footer.copyright.second"|trans}}.
+                <img class="ml-3 d-inline-block" src="{{asset('front/images/logo_onde.png')}}" alt="Kidz School" style="max-width: 40px;">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!--scrolling-->
+
+{% endblock %}
+{% block custom_js %}
+  <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery.min.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-thumbnail/1.1.0/lg-thumbnail.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-fullscreen/1.1.0/lg-fullscreen.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery({
+            download: false,
+            thumbnail: true,
+            exThumbImage: 'data-exthumbimage',
+            counter: false
+        }); 
+        $("#lightgallery2").lightGallery({
+            download: false,
+            thumbnail: true,
+            exThumbImage: 'data-exthumbimage',
+            counter: false
+        }); 
+    });
+    </script>
+	<script src="{{asset('front/js/lightslider.js')}}"></script>
+	<script type="text/javascript">
+		$('#lightSlider').lightSlider({
+		    gallery: true,
+		    item: 1,
+		    loop:true,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        speed:600,
+        slideMove: 1,
+		    slideMargin: 0,
+		    thumbItem: 3
+		});
+	</script>
+{% endblock %}

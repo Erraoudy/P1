@@ -1,0 +1,108 @@
+{% extends 'TWCOndeBundle::ondelayout.html.twig' %}
+{% block Title %}Homepage {{parent()}}{% endblock %}
+{% block Style %}
+    {{parent()}}
+    <style type="text/css" media="screen">
+        .xs-banner-inner-section{
+            padding-bottom: 0px;
+        }
+        #forgot-form-a{
+            display: none;
+        }
+    </style>
+{% if app.request.locale == "ar" %}
+<style type="text/css" media="screen">
+    
+    
+    .xs-unorder-list li i{
+        padding-left: 17px;
+    }
+    .text-icon-mis{
+        text-align: center !important;
+    }
+    .xs-contact-form .input-group-text{
+        border-left: 2px solid #eeeeee;
+        border-right: 0;
+    }
+    .xs-contact-form input:not([type="submit"]), .xs-contact-form textarea{
+        border-left: 0;
+        border-right: 2px solid #eeeeee;
+    }
+    .xs-service-promo h5, .xs-service-promo p ,.xs-post-entry-title a,.xs-event-content p,{
+        font-size: 20px;
+    }
+    .blockq-img{
+        font-size: 18px;
+    }
+</style>
+{% endif %}
+{% endblock %}
+{% block body %}
+    {% if app.request.locale == "fr" %}
+        {% include "TWCOndeBundle:Default:header.html.twig" %} 
+    {% endif %}
+    {% if app.request.locale == "ar" %}
+        {% include "TWCOndeBundle:Default:headerAr.html.twig" %} 
+    {% endif %}
+    
+    <section class="xs-banner-inner-section parallax-window" style="background-image:url('{{asset('assets/images/15.jpg')}}');">
+        <div class="xs-black-overlay"></div>
+            <div class="color-white xs-inner-banner-content pb-3">
+                <h2>Login</h2>
+            </div>
+        </section>
+    </section>
+
+    <main class="xs-main">
+        <section class="xs-content-section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6" id="login-form-a">
+                        <div class="xs-volunteer-form-wraper volunteer-version-2">
+                            <form action="{{ path('onde_connection') }}" method="POST" id="login-form" class="xs-volunteer-form">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <input type="text" name="login_email" id="login_email" class="form-control" placeholder="Your Email">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="password" name="login_password" id="login_password" class="form-control" placeholder="Your Password">
+                                    </div>
+                                </div><!-- .row end -->
+                                <button type="submit" class="btn btn-secondary">Submit</button>
+                                <a href="#" type="" class="btn btn-secondary show-forgot">forgot</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" id="forgot-form-a">
+                        <div class="xs-volunteer-form-wraper volunteer-version-2">
+                            <form action="{{ path('onde_ForgotPw') }}" method="POST" id="" class="xs-volunteer-form">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <input type="text" name="recoverPW" id="recoverPW" class="form-control" placeholder="Your Email">
+                                    </div>
+                                </div><!-- .row end -->
+                                <button type="submit" class="btn btn-secondary">Recover password</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="{{asset('assets/images/congres.jpg')}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    {{ render(controller("TWCOndeBundle:Default:footer")) }}
+{% endblock %}
+{% block custom_js %}
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $(".blue-header").css('display','none');
+        });
+        $('.show-forgot').on('click', function(){
+            $('#login-form-a').css('display','none');
+            $('#forgot-form-a').css('display','block');
+        });
+    </script>
+{% endblock %}

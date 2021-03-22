@@ -1,0 +1,201 @@
+twc_onde_homepage:
+    path:     /
+    defaults: { _controller: TWCOndeBundle:Default:index }
+
+twc_onde_index:
+    path:     /onde
+    defaults: { _controller: TWCOndeBundle:Default:index }
+
+twc_onde_etudes:
+    path:     /onde/Etudes et Rapports
+    defaults: { _controller: TWCOndeBundle:Default:etudes }
+
+twc_onde_photos_videos:
+    path:     /onde/Photos_et_Vidéothèques
+    defaults: { _controller: TWCOndeBundle:Default:photos }
+
+presentation:
+    path:     /onde/presentation
+    defaults: { _controller: TWCOndeBundle:Onde:presentation }
+
+missions:
+    path:     /onde/missions
+    defaults: { _controller: TWCOndeBundle:Onde:missions }
+
+realisations:
+    path:     /onde/realisations
+    defaults: { _controller: TWCOndeBundle:Onde:realisations }
+
+plaidoyer:
+    path:     /onde/plaidoyer
+    defaults: { _controller: TWCOndeBundle:Onde:plaidoyer }
+
+publications:
+    path:     /onde/publications
+    defaults: { _controller: TWCOndeBundle:Onde:publications }
+
+historique:
+    path:     /onde/historique
+    defaults: { _controller: TWCOndeBundle:Onde:historique }
+
+historique_2:
+    path:     /onde/historique/ar
+    defaults: { _controller: TWCOndeBundle:Onde:historiqueAr }
+
+organigramme:
+    path:     /onde/organigramme
+    defaults: { _controller: TWCOndeBundle:Onde:organigramme }
+
+protection:
+    path:     /onde/protection
+    defaults: { _controller: TWCOndeBundle:Actions:protection }
+
+participation:
+    path:     /onde/participation
+    defaults: { _controller: TWCOndeBundle:Actions:participation }
+
+sante:
+    path:     /onde/sante
+    defaults: { _controller: TWCOndeBundle:Actions:sante }
+
+observatoire:
+    path:     /onde/observatoire
+    defaults: { _controller: TWCOndeBundle:Actions:observatoire }
+
+cnde:
+    path:     /onde/cnde
+    defaults: { _controller: TWCOndeBundle:Actions:cnde }
+
+campagne:
+    path:     /onde/campagne
+    defaults: { _controller: TWCOndeBundle:Actions:campagne }
+
+index_actualite:
+    path:     /onde/actualités
+    defaults: { _controller: TWCOndeBundle:Actualites:index }
+
+index_details:
+    path:     /onde/details/{id}
+    defaults: { _controller: TWCOndeBundle:Actualites:details }
+
+documentation:
+    path:     /onde/documentation
+    defaults: { _controller: TWCOndeBundle:espacePress:documentation }
+
+contacts:
+    path:     /onde/contacts
+    defaults: { _controller: TWCOndeBundle:espacePress:contacts }
+
+index:
+    path:     /onde/index
+    defaults: { _controller: TWCOndeBundle:PortailEnfant:index }
+
+formulaire:
+    path:     /onde/formulaire
+    defaults: { _controller: TWCOndeBundle:Contact:formulaire }
+
+telfax:
+    path:     /onde/telfax
+    defaults: { _controller: TWCOndeBundle:Contact:telfax }
+
+# add-article:
+#     path:     /article/{id}
+#     defaults: { _controller: TWCOndeBundle:Onde:article, id:null  }
+
+# article_add_image:
+#     path:     /article/add_image/{id}
+#     defaults: { _controller: TWCOndeBundle:Onde:addimage }
+
+# list-article:
+#     path:     /list/article
+#     defaults: { _controller: TWCOndeBundle:Onde:listArt}
+
+index_detailsPress:
+    path:     /presse/{id}
+    defaults: { _controller: TWCOndeBundle:espacePress:presseDetails }
+
+
+#Admin 
+onde_connection:
+    path:     /onde/connection
+    defaults: { _controller: TWCOndeBundle:Admin:connection }
+
+onde_ForgotPw:
+    path: /onde/recover
+    defaults: { _controller: TWCOndeBundle:Admin:ForgotPW }
+
+onde_recoverForgottenPw:
+    path: /recoverForgottenPassword/{email}
+    defaults: { _controller: TWCOndeBundle:Admin:recoverForgottenPassword }
+    
+admin_login:
+    path:     /login
+    defaults: { _controller: TWCOndeBundle:Admin:login} 
+
+admin_logout:
+    path:     /logout
+    defaults: { _controller: TWCOndeBundle:Admin:logout}
+
+onde_add_picture:
+    path: /addPicture
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:addPicture}
+
+onde_add_img_picture:
+    path: /imagePicture/{id}
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:addimagePicture, id:null }
+
+onde_list_picture:
+    path: /listPictures
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:listPicture}
+
+onde_delete_Image:
+    path: /deletePicture/{id}
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:deletePicture, id:null }
+
+onde_add_media:
+    path: /addMedia/{id}
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:addMedia, id:null}
+
+onde_list_media:
+    path: /listMedias
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:listMedia}
+
+onde_delete_Media:
+    path: /deleteMedia/{id}
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:deleteMedia, id:null }
+
+onde_add_img_media:
+    path: /imageMedia/{id}
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:addimageMedia, id:null }
+
+onde_delete_img_media:
+    path: /deleteImgMedia/{id}
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:deleteImgMedia, id:null }
+
+onde_add_doc_media:
+    path: /docMedia/{id}
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:addDocMedia, id:null }
+
+onde_delete_doc_media:
+    path: /deleteDocMedia/{id}
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:deleteDocMedia, id:null }
+
+onde_list_article:
+    path: /listArticles
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:listArticle}
+
+onde_add_article:
+    path: /addArticle/{id}
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:addArticle, id:null}
+
+onde_delete_article:
+    path: /deleteArticle/{id}
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:deleteArticle, id:null }
+
+onde_add_img_article:
+    path: /imageArticle/{id}
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:addimageArticle, id:null }
+
+onde_delete_img_article:
+    path: /deleteImgArticle/{id}
+    defaults: { _controller: TWCOndeBundle:ArticleMedia:deleteImgArticle, id:null }

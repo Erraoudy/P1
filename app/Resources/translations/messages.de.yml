@@ -1,0 +1,302 @@
+landingpage:
+    header:
+        home: ZUHAUSE
+        discover: ENTDECKEN
+        pricing: PREISGESTALTUNG
+        faq: FAQ
+        signin: EINLOGGEN
+        createcampaign: 'KAMPAGNE ERSTELLEN'
+        dashboard: INSTRUMENTENTAFEL
+        disconnect: TRENNEN
+        home2: home2
+    home:
+        title: 'Die Welt als Werbefläche'
+        description: 'Platzieren Sie Ihre Marketingkampagnen überall und zu jeder Zeit.'
+    discover:
+        title: 'Entdecken Snapmyle'
+        description: 'Snapmyle ist eine Argument Reality-App, die Ihnen die Möglichkeit gibt, Ihre Gutscheine direkt im Laden oder an beliebten Orten zu platzieren. Kunden können diese Gutscheine dann mit ihrer Mobiltelefonkamera in der Snapmyle App erfassen. Snapmyle bietet ein unglaublich leistungsstarkes Tool für effektives Marketing, ohne an einen bestimmten Ort gebunden zu sein'
+    operation:
+        create: Erstellen
+        descriptioncreate: 'Registrierung auf Snapmyle ist kostenlos. Erstellen Sie Ihr Konto in nur wenigen Klicks und starten Sie Ihre erste Marketingkampagne unter snapmyle.'
+        snap: Snap
+        descriptionsnap: 'Produkte oder Gutscheine, Sie können ganz einfach Ihre Angebote erstellen. Legen Sie den Zeitraum und die Nummer Ihres Angebots fest und platzieren Sie es in Ihrem Geschäft oder an beliebten Orten.'
+        smyle: Smyle
+        descriptionsmyle: 'Sie haben jederzeit die Kontrolle über Ihre Marketingkampagne. Wir zeigen Ihnen, wie oft Ihr Angebot abgefangen wurde und wie viele Kunden Ihr Angebot eingelöst haben.'
+    customers:
+        smalltitle: REFERENZEN
+        title: 'Was unsere Kunden sagen'
+        descriptioncustomers: 'Rationalisieren Sie hocheffiziente Szenarien und 24/7-Initiativen auf einzigartige Weise. Kombinieren Sie multifunktionale Ideen durch proaktiven Kundenservice. Definieren Sie bewusst 2.0 intellektuelles Kapital durch nutzerzentrierte Partnerschaften.'
+        name: 'Crystal Gordon'
+        country: 'VEREINIGTE STAATEN'
+    pricing:
+        biggtitle: 'Upgrade auf Pro'
+        card1:
+            title: staff
+            currency: CHF
+            price: '75'
+            numbercoupons: '100'
+            coupons: Gutscheine
+            description1: Zeilgruppendefinition
+            description1-1: 'Mehrere kampnagen'
+            description2: null
+            description3: null
+        card2:
+            title: Standard
+            currency: CHF
+            price: '175'
+            numbercoupons: '250'
+            coupons: Gutscheine
+            description1: Zeilgruppendefinition
+            description1-1: 'Mehrere kampnagen'
+            description2:
+                paragraph1: Ortsbasierend
+                paragraph2: 'drücken Benachrichtigung'
+            description3: null
+        card3:
+            title: Professionel
+            currency: CHF
+            price: '450'
+            numbercoupons: '750'
+            coupons: Gutscheine
+            description1: Zeilgruppendefinition
+            description1-1: 'Mehrere kampnagen'
+            description2:
+                paragraph1: Ortsbasierend
+                paragraph2: 'drücken Benachrichtigung'
+            description3: 'Mehrere standorte'
+        titlebutton: 'WÄHLEN SIE DIESEN PLAN'
+    faq:
+        title: 'Häufig gestellte Fragen'
+        firsttitle: 'Kann ich mehrere Kampagnen gleichzeitig aktivieren?'
+        firstdescription: 'Ja, abhängig davon, welches Paket Sie ausgewählt haben, können Sie mehrere Kampagnen gleichzeitig erstellen und aktivieren.'
+        secondtitle: 'Wie unterstützt mich Snapmyle bei der Platzierung meiner Gutscheine?'
+        seconddescription: 'Sanpmyle platziert Ihre Gutscheine für Sie. Mit einem integrierten Zufallsalgorithmus bringen wir Ihre Gutscheine in die Wohnzimmer Ihrer Kunden.'
+        thirdtitle: 'Kann ich Statistiken zu meinen Kampagnen sehen?'
+        thirddescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante.'
+        fourthtitle: 'Welche Zahlungsmethoden werden akzeptiert?'
+        fourthdescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante.'
+    download:
+        biggtitle: 'Überall herunterladen'
+        smalltitle: 'Verfügbar für alle wichtigen mobilen und Desktop-Plattformen.'
+        description: 'Funktioniert auf iOS 10.0.5+, Android Kitkat und höher.'
+    copyright:
+        title: 'COPYRIGHT © 2018. ALLE RECHTE VORBEHALTEN.BY'
+        press: 'DRÜCKEN SIE'
+        terms: BEGRIFF
+        privacy: PRIVATSPHÄRE
+    signinmodal:
+        signin: Einloggen
+        newaccount: 'Neues Konto'
+        username: Nutzername
+        usermessage: 'Bitte geben Sie Ihren Benutzernamen ein'
+        password: Passwort
+        show: Show
+        passwordmessage: 'Bitte geben Sie Ihr Passwort ein'
+        remember: 'Erinnere dich an mich'
+        login: Anmeldung
+        forgotpassword: 'Haben Sie Ihr Passwort vergessen?'
+    newaccountmodal:
+        firstname: Vorname
+        namemessage: 'Bitte geben Sie Ihren Vornamen ein'
+        lastname: Nachname
+        lastnamemessage: 'Bitte geben Sie ihren Nachnamen ein'
+        username: Nutzername
+        usernamemessage: 'Bitte geben Sie Ihren Benutzernamen ein'
+        email: E-mail
+        emailerror: 'Fehlermeldung hier!'
+        password: Passwort
+        passworderror: 'Fehlermeldung hier!'
+        confirmationpassword: 'Passwort bestätigen'
+        confirmationerror: 'Fehlermeldung hier!'
+        validation: 'Ich stimme dem zu'
+        terms: Begriffe
+        login: Anmeldung
+    forgotpasswordmodal:
+        description: 'Passwort vergessen? Geben Sie bitte Ihre Email-Adresse ein. Sie erhalten einen Link, um ein neues Passwort zu erstellen.'
+        email: E-mail
+        message: 'Bitte geben Sie eine gültige Email ein'
+        back: 'Zurück zur Anmeldung'
+profilepage:
+    profile:
+        title: Profil
+        informations:
+            firstname: Vorname
+            lastname: Nachname
+            username: Nutzername
+            email: Email
+            street: Straße
+            city: Stadt
+            country: Land
+            age: Alter
+            gender:
+                kind: Geschlecht
+                men: Männer
+                women: Frauen
+                gender: Geschlecht
+            titleimage: 'Klicken oder Bilder hier ablegen'
+            removefile: 'Datei löschen'
+            submit: einreichen
+            cancel: Stornieren
+    password:
+        title: Passwortverwaltung
+        oldpassword: 'Altes Passwort'
+        newpassword: 'Neues Kennwort'
+        confirmationpass: 'Bestätige neues Passwort'
+        submit: einreichen
+        cancel: Stornieren
+    favorites:
+        title: Favoriten
+        namelist: Favoriten
+        list:
+            first: Mode
+            second: Elektronik
+            third: 'Schönheit und Wellness'
+            forth: Sport
+            fifth: Reise
+            sixth: Auto
+            seventh: Essen
+            eighth: Andere
+        submit: einreichen
+        cancel: Stornieren
+topmenupage:
+    menu:
+        myprofil: 'Mein Profil'
+        landingpage: 'Gehe zur Landung'
+        disconnect: Trennen
+        backdashboard: 'zurück zum Dashboard'
+userbackinindexpage:
+    dashboard:
+        title: Instrumententafel
+        campaingsmanagement: campaingsmanagement
+        ownersmanagement: ownersmanagement
+        createcampaing: 'Erstellen Sie eine Kampagne'
+        listecampaings: 'listet alle Kampagnen auf'
+        currentcampaigns: 'Aktuelle Kampagnen'
+        pendingcoupons: 'Ausstehende Coupons'
+        captureddeals: 'Gefangene Deals'
+        redeemedcoupons: 'Gutscheine eingelöst'
+        weeklystatistics: 'Wöchentliche Statistiken'
+        usageoVerview: 'Verwendung Überblick'
+        redeemed: Eingelöst
+dealslistpage:
+    list:
+        title: Kampagnenliste
+        verifycoupon: 'verifiziere einen Gutschein'
+        verify: überprüfen
+        addcampaing: 'Fügen Sie eine Kampagne hinzu'
+        informations:
+            iD: ID
+            creator: Schöpfer
+            title: Titel
+            category: Kategorie
+            label: Etikette
+            position: Position
+            coupon: Coupon
+            actions: Aktionen
+        list: Liste
+        edit: Bearbeiten
+        delete: Löschen
+insertionpage:
+    addcoupon:
+        step1:
+            biggtitle: 'Neue Compaing-Form'
+            smalltitle: 'Bitte wählen Sie die Art des Gutscheins, den Sie verwenden möchten'
+            onlinecoupon: Online-Gutschein
+            reedemcoupon: 'Gutschein einlösen'
+            continue: Fortsetzen
+        step2:
+            biggtitle: 'Neue Compaing-Form'
+            smalltitle: Titel
+            category: Kategorie
+            categoryvalue: 'noch nicht für jetzt'
+            description: Beschreibung
+            picture: Bild
+            titlepicture: 'Wählen oder legen Sie Ihr Foto hier ab'
+            continue: Fortsetzen
+        step3:
+            biggtitle: 'Neue Compaing-Form'
+            smalltitle: Stückgutschein
+            credit:
+                title: Crédits
+                numbercoupon: '100 Gutscheine'
+            price: Preis
+            newprice: 'Neuer Preis'
+            couponvalid: 'Gutschein gültig bis'
+            shoplink: 'Link zum Einlösen des Gutscheins'
+            website: Webseite
+            adress: Adresse
+            continue: Fortsetzen
+        step4:
+            biggtitle: 'Neue Compaing-Form'
+            smalltitle: 'Ziel Geschlecht'
+            gender:
+                men: Männlich
+                women: Weiblich
+            targerage:
+                title: Targer-Alter
+                firstchoice: 18-25
+                secondchoice: 26-35
+                thirdchoice: 36-50
+                forthchoice: 50+
+            targetinteress:
+                title: Zielinteressen
+                firstcategory: Mode
+                secondcategory: Elektronik
+                thirdcategory: 'Schönheit und Wellness'
+                forthcategory: Sport
+                fifthcategory: Reise
+                sixthcategory: Auto
+                sevethcategory: Essen
+                eighthcategory: Andere
+            compaingndate: Kampagnendatum
+            continue: Weite
+editdealspage:
+    title: Deal-Ausgabe
+    edit:
+        editiontitle: 'Vergleich der Edition'
+        compaignliste: Kampagnenliste
+        titlefield: Titel
+        category:
+            title: Kategorie
+            category1: Mode
+            category2: Elektronik
+            category3: 'Schönheit und Wellness'
+            category4: Sport
+            category5: Reisen
+            category6: Auto
+            category7: Essen
+            category8: Andere
+        couponlimit: 'Coupons limit'
+        datevalidate: 'Datum validieren'
+        beginingdate: Anfangsdatum
+        endingdate: Enddatum
+        price: Preis
+        newprice: 'Neuer Preis'
+        description: Beschreibung
+        imagetitle: 'Klicken oder Bilder hier ablegen'
+        removefile: 'Datei entfernen'
+        adress: Adresse
+        newprice2: 'Neuer Preis'
+        targetage:
+            title: Zielalter
+            firstchoice: 18-25
+            secondchoice: 26-35
+            thirdchoice: 36-50
+            forthchoice: 50+
+        gender:
+            title: Geschlecht
+            men: Männer
+            women: Frauen
+        typecoupon:
+            onlinecoupon: Online-Gutschein
+            reedemcoupon: 'Gutschein einlösen'
+        submit: Absenden
+pendigshowpage:
+    title: Gutscheine
+    verifycoupon: 'Gutschein prüfen'
+    verify: überprüfen
+    orderid: 'Auftrag Id'
+    creationdate: Erstellungsdatum
+    buyerfirstname: 'Käufer Vorname'
+    buyerlastname: 'Name des Käufers'
+    status: Status

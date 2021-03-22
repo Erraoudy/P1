@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="author" content="SemiColonWeb" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{% block Style %}
+			{# <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/bootstrap.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/swiper.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/style.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/dark.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/fonts.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/font-icons.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/animate.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/magnific-popup.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/css/responsive.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/js/owl/assets/owl.carousel.min.css')}}" type="text/css" />
+			<link rel="stylesheet" href="{{asset('front/js/owl/assets/owl.theme.default.min.css')}}" type="text/css" /> #}
+			<!-- admin -->
+            <link href="{{asset('assets/admin/plugins/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
+            <link href="{{asset('assets/admin/plugins/simple-line-icons/simple-line-icons.min.css')}}" rel="stylesheet" type="text/css" />
+            <link href="{{asset('assets/admin/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+            <link href="{{asset('assets/admin/plugins/uniform/css/uniform.default.css')}}" rel="stylesheet" type="text/css" />
+            <link href="{{asset('assets/admin/plugins/bootstrap-switch/css/bootstrap-switch.min.css')}}" rel="stylesheet" type="text/css" />
+            <!-- END GLOBAL MANDATORY STYLES -->
+            <!-- BEGIN PAGE LEVEL PLUGINS -->
+            <link href="{{asset('assets/admin/plugins/cubeportfolio/css/cubeportfolio.css" rel="stylesheet')}}" type="text/css" />
+            <!-- END PAGE LEVEL PLUGINS -->
+            <!-- BEGIN THEME GLOBAL STYLES -->
+            <link href="{{asset('assets/admin/css/components.min.css')}}" rel="stylesheet" id="style_components" type="text/css" />
+            <link href="{{asset('assets/admin/css/plugins.min.css')}}" rel="stylesheet" type="text/css" />
+            <!-- END THEME GLOBAL STYLES -->
+            <!-- BEGIN PAGE LEVEL STYLES -->
+            <link href="{{asset('assets/admin/pages/css/portfolio.min.css')}}" rel="stylesheet" type="text/css" />
+            <!-- END PAGE LEVEL STYLES -->
+            <!-- BEGIN THEME LAYOUT STYLES -->
+            <link href="{{asset('assets/admin/layouts/layout4/css/layout.min.css')}}" rel="stylesheet" type="text/css" />
+            <link href="{{asset('assets/admin/layouts/layout4/css/themes/light.min.css')}}" rel="stylesheet" type="text/css" id="style_color" />
+            <link href="{{asset('assets/admin/layouts/layout4/css/custom.min.css')}}" rel="stylesheet" type="text/css" />
+            <!-- END THEME LAYOUT STYLES -->
+			
+		{% endblock %}
+		<title>{% block Title %}{% endblock %}| ONDE</title>
+	</head>
+	
+	<body class="stretched">
+		{% for msg in app.session.flashbag.get('notice') %}
+		    <div class="alert alert-{{ msg.type }}">
+		        <strong>{{ msg.title }}</strong><br/>{{ msg.message }}
+		    </div>
+		{% endfor %}
+		<div id="wrapper" class="clearfix">
+			{% block body %}
+			{% endblock %}
+		</div>
+		
+		
+		{% block custom_js %}
+			<!-- BEGIN CORE PLUGINS -->
+	        <script src="{{asset('assets/admin/plugins/jquery.min.js')}}" type="text/javascript"></script>
+	        <script src="{{asset('assets/admin/plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
+	        <script src="{{asset('assets/admin/plugins/js.cookie.min.js')}}" type="text/javascript"></script>
+	        <script src="{{asset('assets/admin/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js')}}" type="text/javascript"></script>
+	        <script src="{{asset('assets/admin/plugins/jquery-slimscroll/jquery.slimscroll.min.js')}}" type="text/javascript"></script>
+	        <script src="{{asset('assets/admin/plugins/jquery.blockui.min.js')}}" type="text/javascript"></script>
+	        <script src="{{asset('assets/admin/plugins/uniform/jquery.uniform.min.js')}}" type="text/javascript"></script>
+	        <script src="{{asset('assets/admin/plugins/bootstrap-switch/js/bootstrap-switch.min.js')}}" type="text/javascript"></script>
+	        <!-- END CORE PLUGINS -->
+	        <!-- BEGIN PAGE LEVEL PLUGINS -->
+	        <script src="{{asset('assets/admin/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js')}}" type="text/javascript"></script>
+	        <!-- END PAGE LEVEL PLUGINS -->
+	        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+	        <script src="{{asset('assets/admin/scripts/app.min.js')}}" type="text/javascript"></script>
+	        <!-- END THEME GLOBAL SCRIPTS -->
+	        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+	        <script src="{{asset('assets/admin/pages/scripts/portfolio-1.min.js')}}" type="text/javascript"></script>
+	        <!-- END PAGE LEVEL SCRIPTS -->
+	        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+	        <script src="{{asset('assets/admin/layouts/layout4/scripts/layout.min.js')}}" type="text/javascript"></script>
+	        <script src="{{asset('assets/admin/layouts/layout4/scripts/demo.min.js')}}" type="text/javascript"></script>
+	        <script src="{{asset('assets/admin/layouts/global/scripts/quick-sidebar.min.js')}}" type="text/javascript"></script>
+	        <!-- END THEME LAYOUT SCRIPTS -->
+        {% endblock %}
+	</body>
+</html>

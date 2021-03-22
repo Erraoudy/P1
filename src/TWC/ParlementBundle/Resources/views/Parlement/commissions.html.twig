@@ -1,0 +1,143 @@
+{% extends 'TWCParlementBundle::parlementlayout.html.twig' %}
+{% block Title %}Homepage {{parent()}}{% endblock %}
+{% block Style %}
+	{{parent()}}
+{% endblock %}
+{% block body %}
+	{{ render(controller("TWCParlementBundle:Default:topMenu")) }}
+	<div class="tho-option">
+		<div id="preloader" class="smooth-loader-wrapper" style="display: none;">
+	    	<div class="smooth-loader">
+	      		<div class="loader">
+	        		<span class="dot dot-1"></span>
+			        <span class="dot dot-2"></span>
+			        <span class="dot dot-3"></span>
+			        <span class="dot dot-4"></span>
+	      		</div>
+	    	</div>
+	  	</div>
+	  	<section class="py-10">
+			<div class="container">
+				<div class="row">
+					<div class="section-title mb-4">
+			            <h2 class="text-danger pl-0">Commissions</h2>
+			        </div>
+				</div>
+				<div class="row">
+					<div class="col-md-7">
+						<p>Le Maroc a été un pays précurseur pour l`inauguration d`une renaissance globale dans le domaine de l`éducation démocratique, des valeurs de la citoyenneté et de la tolérance dans un monde où la race humaine et soumise à des processus et à des contraintes, surtout dans les pays du sud.
+
+Le début de cette renaissance a été inauguré par Feu Sa Majesté le Roi Hassan II, que Dieu ait son âme, qui avait prit l`initiative de la signature de la déclaration universelle par la pérennité de l`enfant, sa protection et son épanouissement. Cet acte fondateur était le déclencheur d`une nouvelle dynamique pour l`ancrage d`une conception moderniste concernant la relation de l`enfant avec la société.
+
+Cette dynamique était le principe de base de la création d`une institution qui a adopté les questions et aspirations de l`enfant dans leur globalité à travers un observatoire national de l`enfant dont la présidence a été confiée à Son Altesse Royale La Princesse Lalla Meryem par le défunt souverain. Grâce à sa présidence effective et à son implication quotidienne, l`Observatoire national des Droits de l`Enfant (ONDE) est devenu un instrument efficace pour une mise en application de la convention onusienne relative aux droits de l`enfant, comme elle a été ratifiée par notre pays .Grâce aussi à l`attention particulière de Son Altesse Royale La Princesse Lalla Meryem, l`ONDE a pris conscience de l`importance du dialogue et de la communication entre les enfants d`une part, et entre les enfants et le reste des intervenants d`autre part.
+
+L`annonce de la constitution du parlement par Sa Majesté le Roi Mohammed VI, que Dieu le glorifie, prit un symbole d`ancrage et un espace considéré comme une école de citoyenneté, de démocratie et de participation active des enfants. Ainsi Sa Majesté le Roi entend faire de cette noble œuvre nationale à caractère civilisationnel un autre moyen de défense et de promotion des droits de l`enfant sous la présidence effective de Son Altesse Royale la Princesse Lalla Meryem.
+
+Conscient de ses responsabilités, et tenant compte des directives royales contenues dans les discours de Sa Majesté le Roi Mohammed VI à l`occasion de la tenue de la deuxième session de ce parlement.
+
+Croyant à la nécessité de la dynamisation du parlement de l`enfant afin de Jouer pleinement son rôle, et de participer à la préparation de nouvelles générations.þPartant de leur rôle effectif comme partenaire principaux dans le développement régional et national à travers la maîtrise de la chose publique locale.
+
+Etant entendu, que pour eux la culture des droits de l`enfant constitue la base de conduite avec les enfants sans discrimination et que cette culture devienne un exercice quotidien exigeant spontanéité et objectivité.
+
+Exhortant les enfants aux initiatives à portée nationale et internationale.
+
+Compte tenue de ce mécanise conçu par notre pays en tant que modèle idéal dans le domaine de la mise en application de la convention onusienne des droits de l`enfant.
+
+Soucieux de la nécessité de la protection de ce mécanisme parrainé par Sa Majesté le Roi Mohammed VI et présidé par Son Altesse Royale la Princesse Lalla Meryem.</p>
+					</div>
+					<div class="col-md-5">
+						<img src="{{asset('front/img/take-action-optimized.jpg')}}" style="width:100%;">
+					</div>
+				</div>
+			</div>
+			<section class="pt-9 pb-6">
+  <div class="container">
+    <div class="section-title justify-content-center mb-4 mb-md-8">
+      <span class="shape shape-left bg-info"></span>
+      <h2 class="text-danger">Service Style 1</h2>
+      <span class="shape shape-right bg-info"></span>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="media mb-6">
+					<div class="media-icon-large bg-warning rounded shadow-sm mr-4">
+						<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+					</div>
+          <div class="media-body">
+            <h3 class="text-warning text-truncate">Experienced Teachers</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+
+			<!-- Media -->
+      <div class="col-md-6 col-lg-4">
+        <div class="media mb-6">
+					<div class="media-icon-large bg-success rounded shadow-sm mr-4">
+						<i class="fa fa-leaf" aria-hidden="true"></i>
+					</div>
+          <div class="media-body">
+            <h3 class="text-success text-truncate">Physical Activity</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+
+			<!-- Media -->
+      <div class="col-md-6 col-lg-4">
+        <div class="media mb-6">
+					<div class="media-icon-large bg-danger rounded shadow-sm mr-4">
+						<i class="fa fa-car" aria-hidden="true"></i>
+					</div>
+          <div class="media-body">
+            <h3 class="text-danger text-truncate">Transportation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+
+			<!-- Media -->
+      <div class="col-md-6 col-lg-4">
+        <div class="media mb-6">
+					<div class="media-icon-large bg-info rounded shadow-sm mr-4">
+						<i class="fa fa-cutlery" aria-hidden="true"></i>
+					</div>
+          <div class="media-body">
+            <h3 class="text-info text-truncate">Delicious Food</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+
+			<!-- Media -->
+      <div class="col-md-6 col-lg-4">
+        <div class="media mb-6">
+					<div class="media-icon-large bg-purple rounded shadow-sm mr-4">
+						<i class="fa fa-heart" aria-hidden="true"></i>
+					</div>
+          <div class="media-body">
+            <h3 class="text-purple text-truncate">Love &amp; Care</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+
+			<!-- Media -->
+      <div class="col-md-6 col-lg-4">
+        <div class="media mb-7">
+					<div class="media-icon-large bg-pink rounded shadow-sm mr-4">
+						<i class="fa fa-shield" aria-hidden="true"></i>
+					</div>
+          <div class="media-body">
+            <h3 class="text-pink text-truncate">Annual Sports</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+		</section>
+	</div>
+{% endblock %}

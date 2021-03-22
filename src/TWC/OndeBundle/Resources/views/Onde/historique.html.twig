@@ -1,0 +1,172 @@
+{% extends 'TWCOndeBundle::ondelayout.html.twig' %}
+{% block Title %}Homepage {{parent()}}{% endblock %}
+{% block Style %}
+	{{parent()}}
+	<style>
+	    .xs-header{
+	    	background-color: #fff !important;
+	    }
+	    .timeline-list-ar li:before{
+		    right: -1.175em !important;
+		    left: auto !important;
+		}
+		.timeline-list-ar:before{
+		    right: -0.25em !important;
+		    left: auto !important;
+		}
+		.timeline-list-ar:after{
+			right: -0.78em !important;
+			left: auto !important;
+		}
+		.ar-content{
+	       	text-align: right !important;
+	      	direction: rtl !important;
+		}
+		.header-transparent .nav-menu li a .submenu-indicator-chevron{
+	    	border-color: transparent #041d57 #041d57 transparent;
+	    }
+	    .t-block-teal h3{
+	    	font-size: 22px !important;
+	    }
+	    .header-transparent .nav-menu li .selected-it .submenu-indicator-chevron{
+
+	    }
+	    .breadcrumb{
+			margin-top:15px;position: absolute;right: 15px;
+		}
+		.t-block-teal p {
+		    font-size: 15px !important;
+		    color: #40403e !important;
+		}
+		@media only screen and (max-width: 992px){
+			.breadcrumb{
+				margin-top:15px;position: initial;
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="{{asset('front/css/timeline.css')}}">
+	
+{% endblock %}
+{% block body %}
+	{% if app.request.locale != "ar" %}
+		{% include "TWCOndeBundle:Default:header.html.twig" %} 
+	{% endif %}
+	{% if app.request.locale == "ar" %}
+		{% include "TWCOndeBundle:Default:headerAr.html.twig" %} 
+	{% endif %}
+
+	<section class="xs-missions-section-v1 block-content t-block-teal l-block-spacing">
+		<div class="l-contained">
+			<header class="heading-group">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 offset-lg-3 order-md-2 order-lg-first">
+						<div class=" xs-inner-banner-content pb-3">
+							<h2>{{"historique.title"|trans}}</h2>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-12 text-lg-right order-md-first order-lg-2">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="{{path('twc_onde_homepage')}}">{{"header.accueil"|trans}}</a></li>
+							<li class="breadcrumb-item active" aria-current="page" style="color: #FFF !important;">{{"header.aProposONDE.historique"|trans}}</li>
+						</ol>
+					</div>
+				</div>
+				
+			</header>
+			<ul class="timeline-list {% if app.request.locale == 'ar' %} timeline-list-ar {% endif %}">
+				<li class="{% if app.request.locale == 'ar' %} ar-list {% endif %}">
+					<div class="content content-time-line {% if app.request.locale == 'ar' %} ar-content {% endif %}">
+						<h3>{{"historique.l1990.title"|trans}}</h3>
+						<div class="img-histor">
+							<img src="{{asset('assets/images/cide.jpg')}}" alt="" style="">
+						</div>
+						<p>
+							{{"historique.l1990.text"|trans|raw}}
+						</p>
+					</div>
+				</li>
+				<li class="{% if app.request.locale == 'ar' %} ar-list {% endif %}">
+					<div class="content content-time-line {% if app.request.locale == 'ar' %} ar-content {% endif %}">
+						<h3>{{"historique.l1993.title"|trans}}</h3>
+						<div class="img-histor">
+							<img src="{{asset('assets/images/img16.jpg')}}" alt="" style="">
+						</div>
+						<p>
+							{{"historique.l1993.text"|trans|raw}}
+						</p>
+					</div>
+				</li>
+				<li class="{% if app.request.locale == 'ar' %} ar-list {% endif %}">
+					<div class="content content-time-line {% if app.request.locale == 'ar' %} ar-content {% endif %}">
+						<h3>{{"historique.l1994.title"|trans}}</h3>
+						<div class="img-histor">
+							<img src="{{asset('assets/images/congres.jpg')}}" alt="" style="">
+						</div>
+						<p>
+							{{"historique.l1994.text"|trans|raw}}
+						</p>
+					</div>
+				</li>
+				<li class="{% if app.request.locale == 'ar' %} ar-list {% endif %}">
+					<div class="content content-time-line {% if app.request.locale == 'ar' %} ar-content {% endif %}">
+						<h3>{{"historique.l1995.title"|trans}}</h3>
+						<div class="img-histor">
+							<img src="{{asset('assets/images/img6.jpg')}}" alt="" style="">
+						</div>
+						<p>
+							{{"historique.l1995.text"|trans|raw}}
+						</p>
+					</div>
+				</li>
+				{# <li>
+					<div class="content content-time-line">
+						<h3>1996 : Le Congrès tient sa 3e édition à Rabat</h3>
+						<div class="img-histor">
+							<img src="{{asset('assets/images/rabat-congres.jpg')}}" alt="" style="">
+						</div>
+						<p>
+						L’année 1996 a été marquée par la tenue de la 3e édition du Congrès à Rabat. Lors de ce grand rendez-vous, l’accent a été particulièrement mis sur la scolarisation des petites filles. Les discussions ont également porté sur le droit à la maternité sans risque de mortalité. En s’attelant à ce droit, le congrès a lever, de manière anticipative, l’un des obstacles pouvant impacter le développement de l’enfant, à savoir la perte de la mère à la naissance et par conséquent les conséquences d’un deuil dans l’enfance. Cette 3e édition du Congrès a connu la présentation du rapport d’activité du Comité de suivi. Dans ce document, l’organigramme et les termes de référence de la mission attribuée à l’ONDE ont été clairement définis. Il est à noter que la dernière édition (16e) du Congrès a été organisée en 2016. 
+						</p>
+					</div>
+				</li> #}
+				<li class="{% if app.request.locale == 'ar' %} ar-list {% endif %}">
+					<div class="content content-time-line {% if app.request.locale == 'ar' %} ar-content {% endif %}">
+						<h3>{{"historique.l1999_1.title"|trans}}</h3>
+						<div class="img-histor">
+							<img src="{{asset('assets/images/PH_CENTRE.jpeg')}}" alt="" style="">
+						</div>
+						<p>
+							{{"historique.l1999_1.text"|trans|raw}}
+						</p>
+					</div>
+				</li>
+				<li class="{% if app.request.locale == 'ar' %} ar-list {% endif %}">
+					<div class="content content-time-line {% if app.request.locale == 'ar' %} ar-content {% endif %}">
+						<h3>{{"historique.l1999_2.title"|trans}}</h3>
+						<div class="img-histor">
+							<img src="{{asset('assets/images/parlement-enfant-marocain.jpg')}}" alt="" style="">
+						</div>
+						<p>
+							{{"historique.l1999_2.text"|trans|raw}}
+						</p>
+					</div>
+				</li>
+
+			</ul>
+
+
+
+		</div>
+
+	</section>
+	{{ render(controller("TWCOndeBundle:Default:footer")) }}
+{% endblock %}
+{% block custom_js %}
+	<script type="text/javascript">
+		$( document ).ready(function() {
+		    $(".white-header").css('display','none');
+		    $(".selected-it").addClass("active");
+		});
+	</script>
+	
+{% endblock %}
