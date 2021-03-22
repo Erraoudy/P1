@@ -1,4 +1,0 @@
-services:
-#    twc_parlement.example:
-#        class: TWC\ParlementBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]

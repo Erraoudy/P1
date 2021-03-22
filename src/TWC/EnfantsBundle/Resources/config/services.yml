@@ -1,4 +1,0 @@
-services:
-#    twc_enfants.example:
-#        class: TWC\EnfantsBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
